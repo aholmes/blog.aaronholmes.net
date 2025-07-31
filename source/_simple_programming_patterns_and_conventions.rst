@@ -1,5 +1,5 @@
 Simple programming patterns and conventions
--------------------------------------------
+===========================================
 
 24 December 2015
 
@@ -10,7 +10,7 @@ These are some patterns and conventions that I tend to use in any code I write. 
 As of now, I've only listed a single convention because I use it in a number of the patterns below.
 
 Conventions
-^^^^^^^^^^^^
+------------
 
 **Branching flow-control statements**
 
@@ -47,7 +47,7 @@ Do not use braces and keep the code on a single line.
     }
 
 Patterns
-^^^^^^^^^
+---------
 
 **Prevent a method from executing more than once**
 

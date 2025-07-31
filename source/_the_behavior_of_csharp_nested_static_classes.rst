@@ -1,5 +1,5 @@
 The Behavior of C# Nested Static Classes
-----------------------------------------
+========================================
 
 26 July 2018
 
@@ -15,7 +15,7 @@ As you'll read below, it turns out the nesting of a static class is *a bit of a
 red herring*. If you write C# regularly, you already know how this works.
 
 Check the Documentation
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 Like any good dev, I checked the documentation first. The Microsoft C# docs for
 `Static Classes and Static Class Members <https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members>`_
@@ -41,7 +41,7 @@ however, this documentation is missing any information about static classes.
 ----
 
 Solving the Unknown
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 With my questions unanswered, and a desire to be certain in my code review, it
 was time to create a test case. Here's the code I wrote.
@@ -112,7 +112,7 @@ instantiated, then immediately followed by printing the value of the instance's
 ----
 
 A Challenger Appears!
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 Before reading further, I'd like to offer you a challenge; predict what happens
 in both scenario 1 and 2.
@@ -120,7 +120,7 @@ in both scenario 1 and 2.
 ----
 
 The Behavior, Discovered
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 Figured it out?
 
@@ -151,7 +151,7 @@ documentation. Indeed, this line applies to all static classes.
     resides.
 
 Why Does this Occur?
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 So with that in mind, what's actually happening here? Let's make a couple
 changes to observe the application execution in both scenarios.

@@ -1,5 +1,5 @@
 Simple Way to Prevent Websites Jumping from Scrollbars
-------------------------------------------------------
+======================================================
 
 01 April 2016
 
@@ -29,7 +29,7 @@ And lastly, if your site creates scrollbars in both directions, you can just use
 *Just be aware that* ``overflow-x`` *and* ``overflow-y`` *may not be supported in your target browsers!*
 
 Update Jan 10th, 2019
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 It turns out Mac OS and iOS may hide scrollbars regardless of the ``overflow: scroll`` rule. Check out this fix to override this behavior.
 

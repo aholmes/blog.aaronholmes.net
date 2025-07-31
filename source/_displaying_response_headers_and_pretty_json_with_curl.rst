@@ -1,11 +1,11 @@
 Displaying response headers and pretty JSON with cURL
------------------------------------------------------
+=====================================================
 
 19 September 2019
 
 
 The Problem
-^^^^^^^^^^^
+-----------
 
 I tend toward using cURL when testing HTTP services, but I had a difficult
 time parsing the result when these services spit back unformatted JSON
@@ -13,7 +13,7 @@ responses. To make my life a little easier, I set out to find a way to bend
 cURL to my will.
 
 The Solution
-^^^^^^^^^^^^
+------------
 
 To make cURL display *both* response headers and formatted JSON, we need to
 send the headers to **STDERR** and pipe **STDOUT** to a JSON-formatting
@@ -44,7 +44,7 @@ This prints something like:
     }
 
 What's Going On Here?
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 After some research I found an article demonstrating the use of
 ``-D "/dev/stderr"``.
@@ -61,7 +61,7 @@ Note: you can also pipe the output to a tool like `jq
 `python -m json.tool <https://docs.python.org/3/library/json.html#json.tool>`_.
 
 A Step Further
-^^^^^^^^^^^^^^
+--------------
 
 You can turn these commands into handy Bash aliases and functions.  
 Add this to your ``~/.bashrc``:

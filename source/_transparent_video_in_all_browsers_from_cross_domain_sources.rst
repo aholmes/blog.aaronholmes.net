@@ -1,5 +1,5 @@
 Transparent Video in all Browsers from Cross-Domain Sources
----------------------------------------------------------------
+===============================================================
 
 06 January 2017
 
@@ -20,7 +20,7 @@ and setting the crossorigin attribute on the source video element.
 ----
 
 Where this fails
-^^^^^^^^^^^^^^^^
+----------------
 
 Unfortunately, like many things in web development, the latest versions of Safari 9.0.2,
 Internet Explorer 11, and Edge 25 do not correctly honor the CORS configuration when
@@ -30,7 +30,7 @@ transparent video in these three browsers unless the source video comes from the
 ----
 
 A brief history of time cross-domain transparent video
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------------
 
 After a lot of research, I stumbled across this answer regarding drawing cross-domain
 images to a canvas. The missing piece for me was the existence of the ``URL.createObjectURL()`` method.
@@ -38,7 +38,7 @@ images to a canvas. The missing piece for me was the existence of the ``URL.crea
 ----
 
 The solution in its entirety
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 Please reference "How to use transparency info from a video on a website" for a more
 descriptive writeup on the basics of video transparency in browsers. The primary piece
@@ -98,7 +98,7 @@ The main JavaScript file execution is deferred in order to run after the page ha
 ----
 
 An admission
-^^^^^^^^^^^^
+------------
 
 I started writing this post almost a year ago now, and I never got back around to breaking
 the code down into more describable parts. I also, unfortunately, am unable to include another
