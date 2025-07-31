@@ -10,7 +10,6 @@ from sphinx.environment import BuildEnvironment
 from sphinx.roles import XRefRole
 
 sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
-print(sys.path)
 
 project = 'blog.aaronholmes.net'
 copyright = '2025, Aaron Holmes'
@@ -23,7 +22,7 @@ extensions: list[str] = []
 templates_path: list[str] = ['_templates']
 exclude_patterns: list[str] = []
 
-html_theme = "sphinx_rtd_theme"
+html_theme = "piccolo_theme"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
