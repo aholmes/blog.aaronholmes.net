@@ -131,4 +131,4 @@ Lastly, here's what the footer looks like. The content scrolls over this as well
 
 .. image:: _static/images/_my_ghost_theme_casper_for_developers/footer.jpg
 
-.. tags:: ghost
+.. tags:: Ghost
