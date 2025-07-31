@@ -6,7 +6,6 @@ from pathlib import Path
 
 from docutils.nodes import Element
 from sphinx.application import Sphinx
-
 from sphinx.environment import BuildEnvironment
 from sphinx.roles import XRefRole
 
@@ -118,6 +117,11 @@ class TagXRefRole(XRefRole):
         refnode["reftype"] = "ref"
         target = f"sphx_tag_{target}"
         return (title, target)
+
+rst_prolog = """
+.. role:: underline
+    :class: underline
+"""
 
 def setup(app: Sphinx) -> None:
     _ = app.add_role("tag", TagXRefRole())
