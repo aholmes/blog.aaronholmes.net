@@ -103,7 +103,6 @@ dependencies = [
     { name = "esbonio" },
     { name = "sphinx" },
     { name = "sphinx-autobuild" },
-    { name = "sphinx-autodoc-typehints" },
     { name = "sphinx-copybutton" },
     { name = "sphinx-rtd-theme" },
     { name = "sphinx-toolbox" },
@@ -112,10 +111,9 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "esbonio", specifier = ">=0.16.5" },
+    { name = "esbonio", specifier = "~=0.16.5" },
     { name = "sphinx", specifier = "~=8.2.3" },
     { name = "sphinx-autobuild", specifier = "~=2024.10.3" },
-    { name = "sphinx-autodoc-typehints", specifier = "~=3.2.0" },
     { name = "sphinx-copybutton", specifier = "~=0.5.2" },
     { name = "sphinx-rtd-theme", specifier = "~=3.0.2" },
     { name = "sphinx-toolbox", specifier = "~=4.0.0" },
