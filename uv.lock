@@ -105,6 +105,7 @@ dependencies = [
     { name = "sphinx" },
     { name = "sphinx-autobuild" },
     { name = "sphinx-copybutton" },
+    { name = "sphinx-tags" },
     { name = "sphinx-toolbox" },
     { name = "sphinxcontrib-plantuml" },
 ]
@@ -112,10 +113,11 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "esbonio", specifier = "~=0.16.5" },
-    { name = "piccolo-theme", specifier = ">=0.24.0" },
+    { name = "piccolo-theme", specifier = "~=0.24.0" },
     { name = "sphinx", specifier = "~=8.2.3" },
     { name = "sphinx-autobuild", specifier = "~=2024.10.3" },
     { name = "sphinx-copybutton", specifier = "~=0.5.2" },
+    { name = "sphinx-tags", specifier = ">=0.4" },
     { name = "sphinx-toolbox", specifier = "~=4.0.0" },
     { name = "sphinxcontrib-plantuml", specifier = "~=0.30" },
 ]
@@ -667,6 +669,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/27/32/ab475e252dc2b704e82a91141fa404cdd8901a5cf34958fd22afacebfccd/sphinx-tabs-3.4.5.tar.gz", hash = "sha256:ba9d0c1e3e37aaadd4b5678449eb08176770e0fc227e769b6ce747df3ceea531", size = 16070, upload-time = "2024-01-21T12:13:39.392Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/20/9f/4ac7dbb9f23a2ff5a10903a4f9e9f43e0ff051f63a313e989c962526e305/sphinx_tabs-3.4.5-py3-none-any.whl", hash = "sha256:92cc9473e2ecf1828ca3f6617d0efc0aa8acb06b08c56ba29d1413f2f0f6cf09", size = 9904, upload-time = "2024-01-21T12:13:37.67Z" },
+]
+
+[[package]]
+name = "sphinx-tags"
+version = "0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/10/de/cd7669ce4619bf03418d428b4e68f20bc90f9de0d9ed36b1d43147d6e96d/sphinx_tags-0.4.tar.gz", hash = "sha256:3065219bacf47567c706f2237d5665b22f3a5167367b4c4568bcda4371a5359d", size = 15292, upload-time = "2024-07-08T15:43:24.068Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/70/71/1fb5aa2013e04d36e6940b308e65608a48e2d5f59f2a21c98f01f2ce0b85/sphinx_tags-0.4-py2.py3-none-any.whl", hash = "sha256:af31203fe4e0ebd39cb95d4fef38720185def6af9fdb921b70275ff659a5dac5", size = 7231, upload-time = "2024-07-08T15:43:23.077Z" },
 ]
 
 [[package]]
