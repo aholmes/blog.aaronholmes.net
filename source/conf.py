@@ -1,15 +1,37 @@
 import fnmatch
+import html
 import os
+import re
 import sys
 import zipfile
 from pathlib import Path
+from typing import Any, TYPE_CHECKING
+from datetime import datetime
 
-from docutils.nodes import Element
+from docutils.nodes import (
+    Element,
+    Text as TextNode,
+    document as DocumentNode,
+    meta as MetaNode,
+    inline as InlineNode,
+    section as SectionNode,
+    title as TitleNode,
+    paragraph as ParagraphNode,
+    raw as RawNode
+)
+from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
 from sphinx.environment import BuildEnvironment
 from sphinx.roles import XRefRole
 
 sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
+
+if TYPE_CHECKING:
+    class PageDate(InlineNode, Element):
+        ...
+
+sys.path.append(str(Path('../lib/pagedate').resolve()))
+from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
 project = 'blog.aaronholmes.net'
 copyright = '2025, Aaron Holmes'
@@ -110,18 +132,99 @@ def create_zips_for_examples(app: Sphinx, exception: Exception | None):
                     arcname = Path.relative_to(file_path, examples_dir)
                     zip_file.write(file_path, arcname)
 
+
 class TagXRefRole(XRefRole):
     def process_link(self, env: BuildEnvironment, refnode: Element, has_explicit_title: bool, title: str, target: str) -> tuple[str, str]:
+        """
+        A role to render sphinx_tags tags.
+        """
         refnode["refdomain"] = "std"
         refnode["reftype"] = "ref"
         target = f"sphx_tag_{target}"
         return (title, target)
+
+
+def collect_meta_dates(app: Sphinx, doctree: DocumentNode):
+    """
+    Extract `:date:` from `.. meta::` and set it in the page metadata.
+    This lets `inject_dates_into_tocnodes` rewrite the TOC titles to include dates.
+    """
+    docname = app.env.docname
+    for node in doctree.traverse(MetaNode):
+        if node.get("name") == "date":
+            app.env.metadata.setdefault(docname, {})["date"] = node["content"]
+
+
+# <a class="reference internal" href="subdoc.html">Title</a>
+rx = re.compile(r'(<a[^>]+href=")([^"]+)\.html(".*?>)([^<]+)(</a>)')
+def add_dates_to_index_body(app: Sphinx, pagename: str, templatename: str, context: dict[str, Any], doctree: DocumentNode) -> str | None:
+    """
+    Insert a span containing the page's date (from metadata).
+    """
+    env = app.builder.env
+    if not (body := context.get("body")):
+        return
+
+    def repl(m: re.Match[str]) -> str:
+        href, doc, rest, text, tail = m.groups()
+        doc = Path(html.unescape(doc)).stem
+        date = env.metadata.get(doc, {}).get("date")
+        if not date:
+            return m.group(0)
+
+        new_text = f'<time class="toc-date" datetime="{date}">{date}</time>'
+        return f"<span>{new_text}{href}{doc}.html{rest}{text}{tail}</span>"
+
+    context["body"] = rx.sub(repl, body)
+
+
+class PageDateDirective(Directive):
+    """
+    Add directive `.. pagedate::` that is replaced with the date from the page's metadata.
+    """
+    has_content = False
+    def run(self):
+        return [PageDate('')]
+
+
+def add_dates_to_page(app: Sphinx, doctree: DocumentNode, docname: str):
+    """
+    Replace `.. pagedate::` with the appropriate HTML.
+    """
+    env = app.builder.env
+    date_raw  = env.metadata.get(docname, {}).get('date')
+    if not date_raw:
+        for node in doctree.traverse(PageDate):
+            node.replace_self([])
+        return
+
+    try:
+        dt  = datetime.strptime(date_raw, "%Y-%m-%d")
+        txt = dt.strftime("%d %B %Y").lstrip("0")
+    except ValueError:
+        txt = date_raw
+
+    html_time = RawNode(
+        '',
+        f'<time class="page-date" datetime="{date_raw}">{txt}</time>',
+        format='html'
+    )
+
+    for node in doctree.traverse(PageDate):
+        node.replace_self(html_time)
+
 
 rst_prolog = """
 .. role:: underline
     :class: underline
 """
 
+
 def setup(app: Sphinx) -> None:
+    _ = app.add_node(PageDate)
+    _ = app.add_directive("pagedate", PageDateDirective)
     _ = app.add_role("tag", TagXRefRole())
     _ = app.connect("build-finished", create_zips_for_examples)
+    _ = app.connect("doctree-read", collect_meta_dates)
+    _ = app.connect('html-page-context', add_dates_to_index_body)
+    _ = app.connect("doctree-resolved", add_dates_to_page)
