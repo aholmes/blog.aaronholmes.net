@@ -31,3 +31,22 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
     padding-right: 5px;
     font-size: 0.7em;
 }
+
+/* theme overrides */
+#show_right_sidebar {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#show_right_sidebar p,
+#right_sidebar p {
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+#right_sidebar .page_toc ul {
+    margin-top: 0;
+}
+div.document:not(:has(#right_sidebar:not([style*=""]))),
+div.document:has(#right_sidebar[style]:not([style*="block"]))
+{
+    margin-right: 7.5rem;
+}
