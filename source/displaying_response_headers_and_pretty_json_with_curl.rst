@@ -82,4 +82,4 @@ Now you can simply run:
     $ curl-json-format -X POST 'http://example.org/some/url' \
           --data-binary @some-file | python -m json.tool
 
-.. tags:: http, bash, curl, utility, productivity, shell
+.. tags:: HTTP, Bash, curl, Utility, Productivity, Shell

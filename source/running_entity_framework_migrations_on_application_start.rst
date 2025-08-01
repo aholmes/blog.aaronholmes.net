@@ -145,4 +145,4 @@ Finally, we instantiate a ``DbMigrator`` and call ``Update()``.
     var dbMigrator = new DbMigrator(migratorConfig);  
     dbMigrator.Update();  
 
-.. tags:: C#, csharp, Entity Framework, ASP.NET, .NET
+.. tags:: C#, Entity Framework, ASP.NET, .NET

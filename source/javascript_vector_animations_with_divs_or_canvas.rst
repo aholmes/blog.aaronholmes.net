@@ -326,4 +326,4 @@ Thanks for reading!
 
 -*Aaron Holmes*
 
-.. tags:: JavaScript, Canvas, Pixi.js, Animation, Codepen, GitHub, fiddle
+.. tags:: JavaScript, Canvas, Pixi.js, Animation, Codepen, GitHub, Fiddle

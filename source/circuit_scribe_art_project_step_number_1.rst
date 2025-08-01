@@ -15,4 +15,4 @@ I finally started my "cityscape" project with Circuit Scribe!  Here's a quick vi
            frameborder="0"
            allowfullscreen></iframe>
 
-.. tags:: circuit-scribe, circuit-scribe-seattle
+.. tags:: Circuit-Scribe, Circuit-Scribe-Seattle

@@ -36,4 +36,4 @@ The bash script below creates a function named ``git`` in your environment that 
     }
 
 
-.. tags:: git, git-bash, bash
+.. tags:: Git, Git-Bash, Bash

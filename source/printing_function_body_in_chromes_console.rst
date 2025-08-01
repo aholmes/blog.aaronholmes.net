@@ -30,4 +30,4 @@ Here is the actual function body:
         return input.substr(0, length) + (ellipsize ? ' ...' : '');
     }
 
-.. tags:: chrome
+.. tags:: Chrome

@@ -35,4 +35,4 @@ Update Jan 10th, 2019
 
 It turns out Mac OS and iOS may hide scrollbars regardless of the ``overflow: scroll`` rule. Check out this fix to override this behavior.
 
-.. tags:: css
+.. tags:: CSS

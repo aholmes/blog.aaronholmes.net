@@ -244,4 +244,4 @@ Scenario 2 outputs the following:
     | 1
     | bar 4
 
-.. tags:: csharp, dotnet, experimental, documentation
+.. tags:: C#, .NET, Experimental, Documentation

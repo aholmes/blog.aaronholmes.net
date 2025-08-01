@@ -64,4 +64,4 @@ Still no luck? Look in the Locals window and see if you can find the correct exc
 
     "{\"Message\":\"The index 'products' for service 'search' was not found.\"}"
 
-.. tags:: c#, .net, http, debugging
+.. tags:: C#, .NET, HTTP, Debugging

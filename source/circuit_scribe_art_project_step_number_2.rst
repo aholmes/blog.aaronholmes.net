@@ -17,4 +17,4 @@ Also I really need to get my camera to pick up the pencil marks as I'm working. 
            frameborder="0"
            allowfullscreen></iframe>
 
-.. tags:: circuit-scribe, circuit-scribe-seattle
+.. tags:: Circuit-Scribe, Circuit-Scribe-Seattle

@@ -167,4 +167,4 @@ Patterns
         Console.WriteLine(DateTime.UtcNow);
     }
 
-.. tags:: patterns, conventions, programming
+.. tags:: Patterns, Conventions, Programming

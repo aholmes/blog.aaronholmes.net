@@ -132,4 +132,4 @@ Here are some resources I used.
 
 * Jayway `Windows Phone 8.1 for Developers - Text to speech <http://www.jayway.com/2014/04/15/windows-phone-8-1-for-developers-texttospeech/>`_
 
-.. tags:: C#, .NET, windows-phone, speech
+.. tags:: C#, .NET, Windows-Phone, Speech

@@ -21,4 +21,4 @@ More information in the ack manpage.
     --type-set=ts:ext:ts
     --type-set=tsdef:match:/.+\.d\.ts/
 
-.. tags:: ack, typescript
+.. tags:: ack, TypeScript

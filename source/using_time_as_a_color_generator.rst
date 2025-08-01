@@ -215,4 +215,4 @@ And here's the range of colors and the pattern in which they occur.
     <div id="green2"></div>  
     <div id="blue2"></div>
 
-.. tags:: JavaScript, CSS, Codepen, fiddle, experimental
+.. tags:: JavaScript, CSS, Codepen, Fiddle, Experimental

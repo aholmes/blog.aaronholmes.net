@@ -141,4 +141,4 @@ the video (instead of a video tag) and draws the request result to the canvas.
         output.putImageData(image, 0, 0, 0, 0, width, height);
     }
 
-.. tags:: javascript, canvas, experimental, ajax, xmlhttprequest, video
+.. tags:: JavaScript, Canvas, Experimental, AJAX, XMLHttpRequest, Video

@@ -40,4 +40,4 @@ Oops! I only drew two additional resistors, which gives us a forward current of 
 
 Next up, I should have the corrected circuits drawn out and I'll actually be able to draw them on my canvas!
 
-.. tags:: circuit-scribe, circuit-scribe-seattle
+.. tags:: Circuit-Scribe, Circuit-Scribe-Seattle
