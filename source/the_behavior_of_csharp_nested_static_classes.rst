@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2018-07-26
+
 The Behavior of C# Nested Static Classes
 ========================================
 
-26 July 2018
+.. pagedate::
 
 While working on a code review, I found a nested static class that I needed to
 verify the validity of. I had three questions:

@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-04-16
+
 Reading an HTTP Request Response Body from Exceptions
 =====================================================
 
-16 April 2015
+.. pagedate::
 
 Every so often I need to read the response body of a failed HTTP request while debugging a .NET application in Visual Studio. It's not immediately obvious how you can do this, so here's a quick way to do so. You can use these same methods when working directly with an HTTP response object or an HTTP request object as well.
 

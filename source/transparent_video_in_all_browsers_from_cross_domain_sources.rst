@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2017-01-06
+
 Transparent Video in all Browsers from Cross-Domain Sources
 ===============================================================
 
-06 January 2017
+.. pagedate::
 
 Transparent video is not a terribly new concept in web development, however, because
 browsers do not support transparency in videos, accomplishing this requires a unique

@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-01-19
+
 Circuit Scribe art project step #1
 ==================================
 
-19 January 2015
+.. pagedate::
 
 I finally started my "cityscape" project with Circuit Scribe!  Here's a quick video showing the first pencil sketches.  I will be posting these as I go along under the *Circuit Scribe – Seattle* tag, so stay tuned for more!
 

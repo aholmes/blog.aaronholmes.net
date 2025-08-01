@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-12-24
+
 Simple programming patterns and conventions
 ===========================================
 
-24 December 2015
+.. pagedate::
 
 I thought it might be helpful to some developers to see some simple patterns and conventions in a variety of languages. Many of us know about more complex and abstract patterns, like the Abstract Factory Pattern or the Flyweight Pattern, but smaller patterns are rarely discussed outside of answers to questions.
 

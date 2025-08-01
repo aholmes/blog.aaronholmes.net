@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-01-25
+
 Circuit Scribe art project step #3
 ==================================
 
-25 January 2015
+.. pagedate::
 
 I finally took the time to start maping out where I'll need to draw my Circuit Scribe ink lines. I also drew where I want to place LEDs and calculated resistor values. I may need to revisit some of this to use less resistors to lower the load on the circuit, but I'm not sure. I'll have to draw out a couple circuits and test.
 

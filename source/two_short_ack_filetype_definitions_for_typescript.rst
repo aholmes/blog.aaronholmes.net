@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2016-02-09
+
 Two short ack filetype definitions for TypeScript
 =================================================
 
-09 February 2016
+.. pagedate::
 
 I search my TypeScript code a lot and finally got tired of using awk, grep, and friends to filter out irrelevant files. Here's a definition for ``.ts`` files and ``.d.ts`` files to help you out.
 

@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-07-01
+
 Printing function body in Chrome's console
 ==========================================
 
-01 July 2015
+.. pagedate::
 
 Chrome used to, by default, print a function body in the console if you entered a function name into it, or if you called ``console.log()`` with a function name.
 

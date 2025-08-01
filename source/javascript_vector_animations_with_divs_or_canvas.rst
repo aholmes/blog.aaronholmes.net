@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2014-11-28
+
 JavaScript Vector Animations with Divs or Canvas
 ================================================
 
-28 November 2014
+.. pagedate::
 
 .. raw:: html
 

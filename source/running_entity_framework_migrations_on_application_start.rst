@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2014-11-28
+
 Running Entity Framework Migrations on Application Start
 ========================================================
 
-28 November 2014
+.. pagedate::
 
 `Entity Framework <https://www.asp.net/entity-framework>`_ is an ORM developed by Microsoft. It has a useful set of tools and conventions for automatically managing database schema changes called `Code First Migrations <http://msdn.microsoft.com/en-us/data/jj591621.aspx>`_. My only gripe is that, unless you are willing to do some digging, migrations can only be managed with the `PowerShell <http://microsoft.com/powershell>`_ commands ``Add-Migration`` and ``Update-Database``. Even `automatic migrations <http://msdn.microsoft.com/en-us/data/jj554735.aspx>`_ require users to run ``Update-Database``.
 

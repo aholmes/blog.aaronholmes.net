@@ -1,8 +1,11 @@
 
+.. meta::
+    :date: 2015-01-12
+
 Writing AngularJS directives as TypeScript classes
 ==================================================
 
-12 January 2015
+.. pagedate::
 
 Introduction
 ------------

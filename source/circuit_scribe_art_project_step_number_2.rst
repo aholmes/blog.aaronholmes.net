@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2015-01-20
+
 Circuit Scribe art project step #2
 ==================================
 
-20 January 2015
+.. pagedate::
 
 I put another hour into this and started sketching out the buildings surrounding the Space Needle. The landscape is starting to take shape, but it lacks any depth. Next I need to figure out where I'm going to route my circuit, and then I'll start drawing some of the details in the buildings.
 

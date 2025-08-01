@@ -1,8 +1,10 @@
+.. meta::
+    :date: 2019-09-19
+
 Displaying response headers and pretty JSON with cURL
 =====================================================
 
-19 September 2019
-
+.. pagedate::
 
 The Problem
 -----------

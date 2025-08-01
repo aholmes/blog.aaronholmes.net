@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2014-12-20
+
 Using Time as a Color Generator
 ===============================
 
-20 December 2014
+.. pagedate::
 
 .. raw:: html
 

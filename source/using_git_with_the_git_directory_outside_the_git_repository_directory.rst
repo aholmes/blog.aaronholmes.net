@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2016-08-19
+
 Using Git with the .git directory outside the Git repository directory
 ======================================================================
 
-19 August 2016
+.. pagedate::
 
 I have a particular use case where I want to use Git on top of another version control system. The only problem I ran into is that the other VCS wanted to track the .git directory that Git creates for its own tracking purposes.
 

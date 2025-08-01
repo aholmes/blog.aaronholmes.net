@@ -1,7 +1,10 @@
+.. meta::
+    :date: 2014-12-01
+
 My Ghost theme; Casper for developers
 =====================================
 
-01 December 2014
+.. pagedate::
 
 I started using Ghost about a week ago. My (honest) first impression was that code blocks are unstyled and uneditable, which is a huge pet peeve of mine. I `fixed that <FIXME>`_ problem by forking Casper and adding Ace editor. You can find my fork of the theme here: https://github.com/aholmes/Casper.
 

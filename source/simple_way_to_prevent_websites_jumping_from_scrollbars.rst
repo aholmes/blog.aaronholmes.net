@@ -1,8 +1,10 @@
+.. meta::
+    :date: 2016-04-01
+
 Simple Way to Prevent Websites Jumping from Scrollbars
 ======================================================
 
-01 April 2016
-
+.. pagedate::
 
 A common occurance I see on websites, and a frequent question I see as well regards websites "jumping" when more content loads onto the page and a scrollbar becomes visible in the browser. The solution to this is remarkably easy, but I don't think I've seen many developers mention it.
 
