@@ -25,14 +25,25 @@ If horizontal, use this CSS:
     .body {
         overflow-x: scroll;
     }
-
+    
 And lastly, if your site creates scrollbars in both directions, you can just use ``overflow``.
 
-*Just be aware that* ``overflow-x`` *and* ``overflow-y`` *may not be supported in your target browsers!*
+.. code-block:: css
+
+    .body {
+        overflow: scroll;
+    }
+
+Just be aware that ``overflow-x`` and ``overflow-y`` may not be supported in your target browsers!
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
+
 
 Update Jan 10th, 2019
 ---------------------
 
-It turns out Mac OS and iOS may hide scrollbars regardless of the ``overflow: scroll`` rule. Check out this fix to override this behavior.
+It turns out Mac OS and iOS may hide scrollbars regardless of the ``overflow: scroll`` rule. Check out `this fix <https://gist.github.com/IceCreamYou/cd517596e5847a88e2bb0a091da43fb4>`_ to override this behavior.
 
 .. tags:: CSS

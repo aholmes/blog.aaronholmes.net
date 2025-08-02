@@ -10,34 +10,53 @@ Every so often I need to read the response body of a failed HTTP request while d
 
 1) Open the Immediate Window under Debug > Windows > Immediate, or by pressing ``CTRL + ALT + I``.
 
-2) You'll need to cast your exception to a ``WebException``. Try either of these, depending on what kind of exception you're working with:
+2) You'll need to cast your exception to a ``WebException``. Try either of these, depending on what kind of exception you're working with.
+
+.. code-block:: csharp
+
+   e as System.Net.WebException
+
+.. code-block:: csharp
+
+    e.InnerException as System.Net.WebException
+
+Still no luck? Look in the Locals window and see if you can find the correct exception that has the HTTP response object in it. You'll know you have the right one when the Immediate Window prints something other than ``null``. For example:
+
+::
+
+    {"The remote server returned an error: (404) Not Found."}
+        base: {"The remote server returned an error: (404) Not Found."}
+        Response: {System.Net.HttpWebResponse}
+        Status: ProtocolError
+
+
+3) Now you can get the response stream from the ``WebException``.
 
 .. code-block:: csharp
 
     var s=(e.InnerException as System.Net.WebException).Response.GetResponseStream();
-    
 
 ::
 
-        {System.Net.SyncMemoryStream}
-             [System.Net.SyncMemoryStream]: {System.Net.SyncMemoryStream}
-            base: {System.Net.SyncMemoryStream}
-            CanRead: true
-            CanSeek: true
-            CanTimeout: true
-            CanWrite: true
-            Length: 78
-            Position: 0
-            ReadTimeout: -1
-            WriteTimeout: -1
+    {System.Net.SyncMemoryStream}
+         [System.Net.SyncMemoryStream]: {System.Net.SyncMemoryStream}
+        base: {System.Net.SyncMemoryStream}
+        CanRead: true
+        CanSeek: true
+        CanTimeout: true
+        CanWrite: true
+        Length: 78
+        Position: 0
+        ReadTimeout: -1
+        WriteTimeout: -1
 
-Still no luck? Look in the Locals window and see if you can find the correct exception that has the HTTP response object in it. You'll know you have the right one when the Immediate Window prints something other than ``null``. For example:
 
-3) Now you can get the response stream from the WebException:
+
+4) Create a new ``StreamReader`` object just for ease of use.
 
 .. code-block:: csharp
 
-    var s = (e.InnerException as System.Net.WebException).Response.GetResponseStream();
+    var sr = new System.IO.StreamReader(s);
 
 ::
 
@@ -47,12 +66,6 @@ Still no luck? Look in the Locals window and see if you can find the correct exc
         CurrentEncoding: {System.Text.UTF8Encoding}
         EndOfStream: false
 
-
-4) Create a new ``StreamReader`` object just for ease of use:
-
-.. code-block:: csharp
-
-    var sr = new System.IO.StreamReader(s);
 
 5) Finally, read the stream contents. This is the HTTP response body:
 

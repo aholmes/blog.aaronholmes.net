@@ -10,13 +10,9 @@ from datetime import datetime
 
 from docutils.nodes import (
     Element,
-    Text as TextNode,
     document as DocumentNode,
     meta as MetaNode,
     inline as InlineNode,
-    section as SectionNode,
-    title as TitleNode,
-    paragraph as ParagraphNode,
     raw as RawNode
 )
 from docutils.parsers.rst import Directive
@@ -220,6 +216,8 @@ def add_dates_to_page(app: Sphinx, doctree: DocumentNode, docname: str):
 rst_prolog = """
 .. role:: underline
     :class: underline
+.. role:: strike
+    :class: strike
 """
 
 

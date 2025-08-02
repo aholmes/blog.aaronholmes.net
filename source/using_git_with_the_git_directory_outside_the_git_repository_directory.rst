@@ -10,7 +10,7 @@ I have a particular use case where I want to use Git on top of another version c
 
 Rather than mess about with making the existing VCS ignore this directory, I set out to make Git store the .git directory somewhere else. Turns out it's pretty easy, but Git is fickle, and you have to set a couple environment variables rather than simply using ``--git-dir`` or ``--work-tree``.
 
-The bash script below creates a function named ``git`` in your environment that shells out to the real Git binary. It will also attempt to create a new directory in your home directory (``~/gitdirs``) to hold these new ``.git`` directories. This script also works in Git Bash!
+The bash script below creates a function named git in your environment that shells out to the real Git binary. It will also attempt to create a new directory in your home directory (``~/gitdirs``) to hold these new .git directories. This script also works in Git Bash!
 
 .. code-block:: bash
 
@@ -33,7 +33,9 @@ The bash script below creates a function named ``git`` in your environment that 
         # Set the two environment variables Git needs to use the new .git directory
         export GIT_DIR=$gitdirname
         export GIT_WORK_TREE=.
-    }
 
+        # Execute the Git command
+        $GIT_BIN $@
+    }
 
 .. tags:: Git, Git-Bash, Bash
