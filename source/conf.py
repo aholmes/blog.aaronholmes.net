@@ -25,11 +25,10 @@ sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
 if TYPE_CHECKING:
     class PageDate(InlineNode, Element):
         ...
-
 sys.path.append(str(Path('../lib/pagedate').resolve()))
 from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
-project = "Aaron Holmes's thoughts"#blog.aaronholmes.net'
+project = "Aaron Holmes's thoughts"
 html_title = project
 html_short_title = html_title
 copyright = '2025, Aaron Holmes'
@@ -218,6 +217,23 @@ rst_prolog = """
     :class: underline
 .. role:: strike
     :class: strike
+.. |pagedate| pagedate::
+.. |cta| raw:: html
+
+    <hr class="docutils">
+    <span>Need additional help? Consider contacting me on <a href="https://www.codementor.io/@aholmes"><img src="https://cdn.codementor.io/badges/book_session_github.svg" alt="Book session on Codementor" style="display:inline;margin:0;vertical-align:middle;" /></a></span>
+.. |disqus| raw:: html
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'aholmes';
+        (function ()
+        {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
 """
 
 
