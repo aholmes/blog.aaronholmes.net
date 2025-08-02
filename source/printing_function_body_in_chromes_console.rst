@@ -4,7 +4,9 @@
 Printing function body in Chrome's console
 ==========================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Chrome
 
 Chrome used to, by default, print a function body in the console if you entered a function name into it, or if you called ``console.log()`` with a function name.
 
@@ -30,4 +32,5 @@ Here is the actual function body:
         return input.substr(0, length) + (ellipsize ? ' ...' : '');
     }
 
-.. tags:: Chrome
+|cta|
+|disqus|

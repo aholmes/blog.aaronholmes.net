@@ -4,7 +4,9 @@
 Displaying response headers and pretty JSON with cURL
 =====================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: HTTP, Bash, curl, Utility, Productivity, Shell
 
 The Problem
 -----------
@@ -92,4 +94,5 @@ Now I can use this command!
     $ curl-json-format -X POST 'http://example.org/some/url' \
           --data-binary @some-file | python -m json.tool  
 
-.. tags:: HTTP, Bash, curl, Utility, Productivity, Shell
+|cta|
+|disqus|

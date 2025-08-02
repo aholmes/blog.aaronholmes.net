@@ -4,7 +4,9 @@
 JavaScript Vector Animations with Divs or Canvas
 ================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: JavaScript, Canvas, Pixi.js, Animation, Codepen, GitHub, Fiddle
 
 .. raw:: html
 
@@ -326,4 +328,6 @@ Thanks for reading!
 
 -*Aaron Holmes*
 
-.. tags:: JavaScript, Canvas, Pixi.js, Animation, Codepen, GitHub, Fiddle
+
+|cta|
+|disqus|

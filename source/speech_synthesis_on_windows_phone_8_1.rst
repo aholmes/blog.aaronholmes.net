@@ -4,7 +4,9 @@
 Speech Synthesis on Windows Phone 8.1
 =====================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: C#, .NET, Windows-Phone, Speech
 
 I recently wrote an application to make my phone report current Los Angeles traffic conditions. I used the ``Windows.Media.SpeechSynthesis`` namespace to read in either a plain-text string, or an `SSML <http://www.w3.org/TR/speech-synthesis/>`_-formatted string, and to speak it until the end. It turns out that speech synthesis with .NET libraries is incredibly simple, but some information takes a little effort to find. For me, searching for "text-to-speech windows phone 8.1" shows me a bunch of results for how to accomplish this with Silverlight! Definitely not what I want.
 
@@ -132,4 +134,5 @@ Here are some resources I used.
 
 * Jayway `Windows Phone 8.1 for Developers - Text to speech <http://www.jayway.com/2014/04/15/windows-phone-8-1-for-developers-texttospeech/>`_
 
-.. tags:: C#, .NET, Windows-Phone, Speech
+|cta|
+|disqus|

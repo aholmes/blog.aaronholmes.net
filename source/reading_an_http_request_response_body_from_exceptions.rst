@@ -4,7 +4,9 @@
 Reading an HTTP Request Response Body from Exceptions
 =====================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: C#, .NET, HTTP, Debugging
 
 Every so often I need to read the response body of a failed HTTP request while debugging a .NET application in Visual Studio. It's not immediately obvious how you can do this, so here's a quick way to do so. You can use these same methods when working directly with an HTTP response object or an HTTP request object as well.
 
@@ -77,4 +79,5 @@ Still no luck? Look in the Locals window and see if you can find the correct exc
 
     "{\"Message\":\"The index 'products' for service 'search' was not found.\"}"
 
-.. tags:: C#, .NET, HTTP, Debugging
+|cta|
+|disqus|

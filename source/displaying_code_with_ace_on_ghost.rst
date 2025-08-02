@@ -4,7 +4,9 @@
 Displaying code with Ace on Ghost
 =================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Ghost, Ace, Theme, JavaScript, CSS
 
 After getting Ghost set up, I was disappointed to see the lack of syntax highlighting in Casper's codeblocks. Additionally, code posted on sites where I can't copy, edit, or scroll around is a huge pet peeve of mine. I wanted to provide a usable codeblock for any readers of my site. Having used `Ace <http://ace.c9.io/>`_ before, I knew it did exactly what I was looking for. After some quick Googling and not finding a solution for this already, I decided to do it myself.
 
@@ -209,4 +211,5 @@ I didn't like that my paragraphs following a code block would "stick" to the bot
     }
 
 
-.. tags:: Ghost, Ace, Theme, JavaScript, CSS
+|cta|
+|disqus|

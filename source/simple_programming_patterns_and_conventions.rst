@@ -4,7 +4,9 @@
 Simple programming patterns and conventions
 ===========================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Patterns, Conventions, Programming
 
 I thought it might be helpful to some developers to see some simple patterns and conventions in a variety of languages. Many of us know about more complex and abstract patterns, like the `Abstract Factory Pattern <https://en.wikipedia.org/wiki/Abstract_factory_pattern>`_ or the `Flyweight Pattern <https://en.wikipedia.org/wiki/Flyweight_pattern>`_, but smaller patterns are rarely discussed outside of answers to questions.
 
@@ -219,4 +221,5 @@ You may need to execute a series of asynchronous tasks in parallel, and then awa
     }
 
 
-.. tags:: Patterns, Conventions, Programming
+|cta|
+|disqus|

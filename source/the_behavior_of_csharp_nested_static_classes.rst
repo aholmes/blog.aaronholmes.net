@@ -4,7 +4,9 @@
 The Behavior of C# Nested Static Classes
 ========================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: C#, .NET, Experimental, Documentation
 
 While working on a code review, I found a nested static class that I needed to verify the validity of. I had three questions:
 
@@ -241,4 +243,5 @@ Scenario 2 outputs the following:
 Now I am curious what the non-gaurantee of *when* the static class
 is initialized means in runtimes other than the CLR.
 
-.. tags:: C#, .NET, Experimental, Documentation
+|cta|
+|disqus|

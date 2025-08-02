@@ -4,7 +4,9 @@
 Running Entity Framework Migrations on Application Start
 ========================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: C#, Entity Framework, ASP.NET, .NET
 
 `Entity Framework <https://www.asp.net/entity-framework>`_ is an ORM developed by Microsoft. It has a useful set of tools and conventions for automatically managing database schema changes called `Code First Migrations <http://msdn.microsoft.com/en-us/data/jj591621.aspx>`_. My only gripe is that, unless you are willing to do some digging, migrations can only be managed with the `PowerShell <http://microsoft.com/powershell>`_ commands ``Add-Migration`` and ``Update-Database``. Even `automatic migrations <http://msdn.microsoft.com/en-us/data/jj554735.aspx>`_ require users to run ``Update-Database``.
 
@@ -145,4 +147,5 @@ Finally, we instantiate a ``DbMigrator`` and call ``Update()``.
     var dbMigrator = new DbMigrator(migratorConfig);  
     dbMigrator.Update();  
 
-.. tags:: C#, Entity Framework, ASP.NET, .NET
+|cta|
+|disqus|

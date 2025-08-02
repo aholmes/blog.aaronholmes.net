@@ -5,7 +5,9 @@
 Writing AngularJS directives as TypeScript classes
 ==================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: JavaScript, TypeScript, AngularJS, Directives
 
 Introduction
 ------------
@@ -520,4 +522,5 @@ To summarize, here are the basic pieces you need to get this working.
 
 **It's important to note that Factory is executed here, and its returned value (the directive) is passed to Angular's registration function.** :underline:`Be sure to include the parenthesis!`
 
-.. tags:: JavaScript, TypeScript, AngularJS, Directives
+|cta|
+|disqus|

@@ -4,7 +4,9 @@
 Transparent Video in all Browsers from Cross-Domain Sources
 ===============================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: JavaScript, Canvas, Experimental, AJAX, XMLHttpRequest, Video
 
 A brief history of :strike:`time` cross-domain transparent video
 ----------------------------------------------------------------
@@ -162,4 +164,5 @@ I started writing this post almost a year ago now, and I never got back around t
 
 I also, unfortunately, am unable to include another significant portion of the code that allows these same concepts to work in some older browers, or those with iffy CORS support. I can give a hint, though: it uses XMLHttpRequest to get the video (instead of a video tag) and draws the request result to the canvas.
 
-.. tags:: JavaScript, Canvas, Experimental, AJAX, XMLHttpRequest, Video
+|cta|
+|disqus|

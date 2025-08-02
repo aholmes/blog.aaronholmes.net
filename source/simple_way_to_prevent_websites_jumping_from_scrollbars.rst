@@ -4,7 +4,9 @@
 Simple Way to Prevent Websites Jumping from Scrollbars
 ======================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: CSS
 
 A common occurance I see on websites, and a frequent question I see as well regards websites "jumping" when more content loads onto the page and a scrollbar becomes visible in the browser. The solution to this is remarkably easy, but I don't think I've seen many developers mention it.
 
@@ -46,4 +48,5 @@ Update Jan 10th, 2019
 
 It turns out Mac OS and iOS may hide scrollbars regardless of the ``overflow: scroll`` rule. Check out `this fix <https://gist.github.com/IceCreamYou/cd517596e5847a88e2bb0a091da43fb4>`_ to override this behavior.
 
-.. tags:: CSS
+|cta|
+|disqus|

@@ -4,7 +4,9 @@
 My Ghost theme; Casper for developers
 =====================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Ghost
 
 I started using Ghost about a week ago. My (honest) first impression was that code blocks are unstyled and uneditable, which is a huge pet peeve of mine. I `fixed that <FIXME>`_ problem by forking Casper and adding Ace editor. You can find my fork of the theme here: https://github.com/aholmes/Casper.
 
@@ -134,4 +136,5 @@ Lastly, here's what the footer looks like. The content scrolls over this as well
 
 .. image:: _static/images/_my_ghost_theme_casper_for_developers/footer.jpg
 
-.. tags:: Ghost
+|cta|
+|disqus|

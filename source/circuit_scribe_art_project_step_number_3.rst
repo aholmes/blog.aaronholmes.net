@@ -4,7 +4,9 @@
 Circuit Scribe art project step #3
 ==================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Circuit-Scribe, Circuit-Scribe-Seattle
 
 I finally took the time to start maping out where I'll need to draw my Circuit Scribe ink lines. I also drew where I want to place LEDs and calculated resistor values. I may need to revisit some of this to use less resistors to lower the load on the circuit, but I'm not sure. I'll have to draw out a couple circuits and test.
 
@@ -46,4 +48,5 @@ Oops! I only drew two additional resistors, which gives us a forward current of 
 
 Next up, I should have the corrected circuits drawn out and I'll actually be able to draw them on my canvas!
 
-.. tags:: Circuit-Scribe, Circuit-Scribe-Seattle
+|cta|
+|disqus|

@@ -4,7 +4,9 @@
 Two short ack filetype definitions for TypeScript
 =================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: ack, TypeScript
 
 I search my TypeScript code a lot and finally got tired of using awk, grep, and friends to filter out irrelevant files. Here's a definition for .ts files and .d.ts files to help you out.
 
@@ -19,4 +21,5 @@ Now you can search just your .ts files without also searching compiled .js and .
 
 More information `in the ack manpage <http://beyondgrep.com/documentation/ack-2.14-man.html#defining_your_own_types>`_.
 
-.. tags:: ack, TypeScript
+|cta|
+|disqus|

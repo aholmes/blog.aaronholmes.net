@@ -4,7 +4,9 @@
 Using Git with the .git directory outside the Git repository directory
 ======================================================================
 
-.. pagedate::
+|pagedate|
+
+.. tags:: Git, Git-Bash, Bash
 
 I have a particular use case where I want to use Git on top of another version control system. The only problem I ran into is that the other VCS wanted to track the .git directory that Git creates for its own tracking purposes.
 
@@ -38,4 +40,5 @@ The bash script below creates a function named git in your environment that shel
         $GIT_BIN $@
     }
 
-.. tags:: Git, Git-Bash, Bash
+|cta|
+|disqus|

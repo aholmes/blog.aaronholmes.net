@@ -22,6 +22,22 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
     text-decoration: line-through;
 }
 
+/* date and tag subheader*/
+p:has(.page-date),
+p:has(.page-date) + p.tags {
+    display: inline;
+}
+p:has(.page-date) + p.tags a {
+    color: #9eabb3;
+}
+div.document p.tags {
+    font-size: 0.9rem;
+}
+div.document .page-date {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
 /* format dates before links in page TOCs */
 .toc-date:before {
     content:'[';
@@ -53,4 +69,11 @@ div.document:not(:has(#right_sidebar:not([style*=""]))),
 div.document:has(#right_sidebar[style]:not([style*="block"]))
 {
     margin-right: 7.5rem;
+}
+
+/* disqus comments */
+#disqus_thread {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
 }
