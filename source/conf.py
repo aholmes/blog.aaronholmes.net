@@ -46,7 +46,6 @@ html_theme = "piccolo_theme"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
-html_file_suffix = ""
 
 tags_create_tags = True
 tags_intro_text = ""
@@ -62,8 +61,7 @@ extensions: list[str] = [
     "sphinx.ext.autosectionlabel",
     "sphinx_copybutton",
     "sphinx.ext.extlinks",
-    "sphinx_tags",
-    "sphinx_reredirects"
+    "sphinx_tags"
 ]
 
 
@@ -89,9 +87,6 @@ extlinks: dict[str, tuple[str, str|None]] = {
     )
 }
 
-redirects = {
-    "displaying-response-headers-and-pretty-json-with-curl": "displaying_response_headers_and_pretty_json_with_curl.html"
-}
 
 def create_zips_for_examples(app: Sphinx, exception: Exception | None):
     if exception is not None:
