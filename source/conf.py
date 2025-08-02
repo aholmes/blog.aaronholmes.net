@@ -33,9 +33,12 @@ if TYPE_CHECKING:
 sys.path.append(str(Path('../lib/pagedate').resolve()))
 from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
-project = 'blog.aaronholmes.net'
+project = "Aaron Holmes's thoughts"#blog.aaronholmes.net'
+html_title = project
+html_short_title = html_title
 copyright = '2025, Aaron Holmes'
 author = 'Aaron Holmes'
+html_favicon = '_static/favicon.ico'
 
 master_doc = "index"
 

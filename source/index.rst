@@ -1,9 +1,14 @@
-Aaron Holmes' thoughts
-======================
+
+*Aaron Holmes is a software engineer with experience in
+enterprise softare development, entertainment industry, and academia.
+Outside of work, his interests include IoT, smart home,
+hardware and electronics, gardening, playing drums, and more.*
+
+Posts
+=====
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
 
    displaying_response_headers_and_pretty_json_with_curl
    the_behavior_of_csharp_nested_static_classes
