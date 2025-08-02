@@ -88,13 +88,6 @@ extlinks: dict[str, tuple[str, str|None]] = {
     )
 }
 
-plantuml = "docker run \
-        -i \
-        ghcr.io/uclahs-cds/plantuml-github-action:v2.0.0 \
-        -DPLANTUML_LIMIT_SIZE=8192 \
-        -v -p -tpng"
-
-
 def create_zips_for_examples(app: Sphinx, exception: Exception | None):
     if exception is not None:
         return
