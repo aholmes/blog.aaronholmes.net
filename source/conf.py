@@ -49,7 +49,7 @@ html_css_files: list[str] = ["custom.css"]
 
 tags_create_tags = True
 tags_intro_text = ""
-tags_page_title = ""
+tags_page_title = "Tag"
 tags_index_head = "Tags"
 tags_page_header = "Pages with this tag"
 
@@ -165,8 +165,8 @@ def add_dates_to_index_body(app: Sphinx, pagename: str, templatename: str, conte
 
     def repl(m: re.Match[str]) -> str:
         href, doc, rest, text, tail = m.groups()
-        doc = Path(html.unescape(doc)).stem
-        date = env.metadata.get(doc, {}).get("date")
+        docname = Path(html.unescape(doc)).stem
+        date = env.metadata.get(docname, {}).get("date")
         if not date:
             return m.group(0)
 
