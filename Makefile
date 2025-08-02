@@ -16,7 +16,7 @@ help: $(VENV)
 	@$(ACTIVATE_VENV) && \
 	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile autobuild
+.PHONY: help Makefile autobuild clean-sphinx clean
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
@@ -30,5 +30,10 @@ autobuild: $(VENV) Makefile
 		--ignore "$(SOURCEDIR)/_tags" \
 		-j auto
 
-clean:
+clean-sphinx:
+	@$(ACTIVATE_VENV) && \
+	$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+
+clean: clean-sphinx
 	rm -rf "$(BUILDDIR)" "$(VENV)"
