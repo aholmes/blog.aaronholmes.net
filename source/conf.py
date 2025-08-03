@@ -67,10 +67,37 @@ extensions: list[str] = [
     "sphinx_copybutton",
     "sphinx.ext.extlinks",
     "sphinx_tags",
-    "sphinxext.rediraffe"
+    "sphinx_reredirects"
 ]
 
-rediraffe_redirects = "redirects.txt"
+redirects = {
+    "2024-08-08_MakingACopperWireTree_BoutrosLab/index.html": "/2024/making_a_copper_wire_tree.html",
+    "2022-09-22_WinterIsCanning_BoutrosLab/index.html": "/2022/winter_is_canning_2022.html",
+    "2022-04-07_PairProgramming_BoutrosLab/index.html": "/2022/pair_programming.html",
+    "2021-10-28_MyDogCleo_BoutrosLab/index.html": "/2021/my_dog_cleo.html",
+    "2021-04-21_TypesInSoftware_BoutrosLab/index.html": "/2021/types_in_software.html",
+    "displaying-response-headers-and-pretty-json-with-curl/index.html": "/2019/displaying_response_headers_and_pretty_json_with_curl.html",
+    "the-behavior-of-c-nested-static-classes/index.html": "/2018/the_behavior_of_csharp_nested_static_classes.html",
+    "transparent-video-in-all-browsers-from-cross-domain-sources/index.html": "/2017/transparent_video_in_all_browsers_from_cross_domain_sources.html",
+    "using-git-with-git-directory-outside-the-git-repository/index.html": "/2016/using_git_with_the_git_directory_outside_the_git_repository_directory.html",
+    "simple-way-to-prevent-website-jumping-from-scrollbars/index.html": "/2016/simple_way_to_prevent_websites_jumping_from_scrollbars.html",
+    "two-short-ack-filetype-definitions-for-typescript/index.html": "/2016/two_short_ack_filetype_definitions_for_typescript.html",
+    "simple-programming-patterns-and-conventions/index.html": "/2015/simple_programming_patterns_and_conventions.html",
+    "printing-function-body-in-chromes-console/index.html": "/2015/printing_function_body_in_chromes_console.html",
+    "reading-an-http-request-response-body-from-exceptions/index.html": "/2015/reading_an_http_request_response_body_from_exceptions.html",
+    "circuit-scribe-art-project-step-3/index.html": "/2015/circuit_scribe_art_project_step_number_3.html",
+    "circuit-scribe-art-project-step-2/index.html": "/2015/circuit_scribe_art_project_step_number_2.html",
+    "circuit-scribe-art-project-step-1/index.html": "/2015/circuit_scribe_art_project_step_number_1.html",
+    "writing-angularjs-directives-as-typescript-classes/index.html": "/2015/writing_angularjs_directives_as_typescript_classes.html",
+    "using-time-as-a-color-generator/index.html": "/2014/using_time_as_a_color_generator.html",
+    "speech-synthesis-on-windows-phone-8-1/index.html": "/2014/speech_synthesis_on_windows_phone_8_1.html",
+    "my-ghost-theme-a-fork-of-casper/index.html": "/2014/my_ghost_theme_casper_for_developers.html",
+    "running-entity-framework-migrations-on-application-start/index.html": "/2014/running_entity_framework_migrations_on_application_start.html",
+    "displaying-code-with-ace-on-ghost/index.html": "/2014/displaying_code_with_ace_on_ghost.html",
+    "canvas-vector-animations-with-css-or-javascript/index.html": "/2014/javascript_vector_animations_with_divs_or_canvas.html",
+    "stack-your-circuit-scribe-modules/index.html": "https://www.instructables.com/Stack-your-Circuit-Scribe-modules",
+    "astable-multivibrator-led-flasher-with-circuit-scribe/index.html": "https://www.instructables.com/Astable-microvibrator-LED-flasher-with-Circuit-Scr"
+}
 
 copybutton_exclude = ".linenos, .gp"
 copybutton_prompt_text = r">>> |\.\.\. |\$ "

@@ -13,5 +13,4 @@ dependencies = [
     "sphinx-reredirects ~= 1.0.0",
     "sphinx-tags ~= 0.4",
     "sphinx-toolbox ~= 4.0.0",
-    "sphinxext-rediraffe ~= 0.2.7",
 ]
