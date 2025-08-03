@@ -28,7 +28,7 @@ if TYPE_CHECKING:
 sys.path.append(str(Path('../lib/pagedate').resolve()))
 from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
-project = "Aaron Holmes's thoughts"
+project = "Aaron Holmes' thoughts"
 html_title = project
 html_short_title = html_title
 copyright = '2025, Aaron Holmes'
@@ -46,6 +46,11 @@ html_theme = "piccolo_theme"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
+
+html_theme_options: dict[str, Any] = {
+    "globaltoc_collapse": False
+}
+
 
 tags_create_tags = True
 tags_intro_text = ""
@@ -148,7 +153,6 @@ def collect_meta_dates(app: Sphinx, doctree: DocumentNode):
 
 # <a class="reference internal" href="subdoc.html">Title</a>
 rx = re.compile(r'(<a[^>]+href=")([^"]+)\.html(".*?>)([^<]+)(</a>)')
-date_index_rx = re.compile(r'(\d{4})/index')
 def add_dates_to_index_body(app: Sphinx, pagename: str, templatename: str, context: dict[str, Any], doctree: DocumentNode) -> str | None:
     """
     Insert a span containing the page's date (from metadata).
