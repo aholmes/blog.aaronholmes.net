@@ -44,7 +44,7 @@ Oops! I only drew two additional resistors, which gives us a forward current of 
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/RjC7de7ul3E" frameborder="0" allowfullscreen></iframe>
 
-.. image:: _static/images/circuit_scribe_art_project_step_number_3/circuit-1.png
+.. image:: /_static/images/2015/circuit_scribe_art_project_step_number_3/circuit-1.png
 
 Next up, I should have the corrected circuits drawn out and I'll actually be able to draw them on my canvas!
 

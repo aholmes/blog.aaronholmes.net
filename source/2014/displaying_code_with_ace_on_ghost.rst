@@ -155,7 +155,7 @@ I added this code in a ``<script>`` block immediately following the ace.js inclu
 
 This code replaces any instances of ``<pre><code>`` with a new ``<code>`` element that has been initialized with Ace after your site renders. It also supports using different syntax definitions, which you can control for your code blocks by using three backticks instead of tabs when writing your post. Of course, the options in ``setOptions()`` can be changed as well.
 
-.. image:: _static/images/_displaying_code_with_ace_on_ghost/three-backticks.jpg
+.. image:: /_static/images/2014/displaying_code_with_ace_on_ghost/three-backticks.jpg
 
 CSS Tweaks
 ----------

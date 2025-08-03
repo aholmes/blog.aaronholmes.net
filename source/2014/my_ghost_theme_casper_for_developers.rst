@@ -26,7 +26,7 @@ Ace editor
 
 As mentioned above, my first change was to add `Ace editor <http://ace.c9.io/>`_. You can see it in action in this post, but here's a screenshot as well.
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/javascript_ace_capture.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/javascript_ace_capture.jpg
    :target: http://aholmes.azurewebsites.net/canvas-vector-animations-with-css-or-javascript/#therenderingmethoditself
 
 Google+ comments
@@ -61,7 +61,7 @@ This feature is optional in my theme.
 
 Here's what the module looks like in each post's footer.
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/footer_capture.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/footer_capture.jpg
    
 `Code link <https://github.com/aholmes/Casper/blob/master/post.hbs#L88-L98>`_
    
@@ -111,11 +111,11 @@ Casper was lacking a way to get the direct link to any headers in my posts. This
 
 Here's what a header looks like when hovered over:
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/hovered_link_header.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/hovered_link_header.jpg
 
 Here's what a header looks like when it's the active link:
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/active_link_header.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/active_link_header.jpg
 
 Fixed-position header and footer across the site
 ------------------------------------------------
@@ -126,15 +126,15 @@ This one is harder to capture with screenshots, but here they are anyway.
 
 Here's what the home page looks like when first loaded. Notice that the image doesn't take over the entire screen.
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/home.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/home.jpg
 
 Here's what the home page looks like when scrolled part way. Notice that the content covers the header, and the header has not moved at all.
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/home_scrolled.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/home_scrolled.jpg
 
 Lastly, here's what the footer looks like. The content scrolls over this as well.
 
-.. image:: _static/images/_my_ghost_theme_casper_for_developers/footer.jpg
+.. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/footer.jpg
 
 |cta|
 |disqus|
