@@ -1,4 +1,15 @@
 404
 ===
 
-Oh no!
+.. raw:: html
+
+    <noscript>
+    <meta http-equiv="refresh" content="0; url=/search.html" />
+    </noscript>
+    <script>
+    var target = "/search.html?q=" + encodeURIComponent(window.location.pathname.slice(1));
+    if (window.location.hash) {
+        window.location.replace(target + window.location.hash);
+    } else {
+        window.location.replace(target);
+    }</script>
