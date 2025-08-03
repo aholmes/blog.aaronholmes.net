@@ -102,7 +102,8 @@ redirects = {
     "page/2/index.html": "/index.html",
     "page/3/index.html": "/index.html",
     "page/4/index.html": "/index.html",
-    "page/5/index.html": "/index.html"
+    "page/5/index.html": "/index.html",
+    "author/aaron/index.html": "/index.html",
 }
 
 copybutton_exclude = ".linenos, .gp"
