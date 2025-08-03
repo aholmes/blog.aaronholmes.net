@@ -1,4 +1,3 @@
-
 *Aaron Holmes is a software engineer with experience in
 enterprise softare development, entertainment industry, and academia.
 Outside of work, his interests include IoT, smart home,
