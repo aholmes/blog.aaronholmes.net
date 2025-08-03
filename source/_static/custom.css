@@ -68,10 +68,11 @@ ul:has(.toc-date) {
 #right_sidebar .page_toc ul {
     margin-top: 0;
 }
-div.document:not(:has(#right_sidebar:not([style*=""]))),
-div.document:has(#right_sidebar[style]:not([style*="block"]))
-{
-    margin-right: 7.5rem;
+div.document {
+    margin-right: 0;
+}
+#right_sidebar {
+    display: none;
 }
 
 /* disqus comments */
