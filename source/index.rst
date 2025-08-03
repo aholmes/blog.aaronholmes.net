@@ -15,6 +15,9 @@ Posts
 .. toctree::
    :maxdepth: 2
    
+   2024/index
+   2022/index
+   2021/index
    2019/index
    2018/index
    2017/index
