@@ -96,7 +96,13 @@ redirects = {
     "displaying-code-with-ace-on-ghost/index.html": "/2014/displaying_code_with_ace_on_ghost.html",
     "canvas-vector-animations-with-css-or-javascript/index.html": "/2014/javascript_vector_animations_with_divs_or_canvas.html",
     "stack-your-circuit-scribe-modules/index.html": "https://www.instructables.com/Stack-your-Circuit-Scribe-modules",
-    "astable-multivibrator-led-flasher-with-circuit-scribe/index.html": "https://www.instructables.com/Astable-microvibrator-LED-flasher-with-Circuit-Scr"
+    "astable-multivibrator-led-flasher-with-circuit-scribe/index.html": "https://www.instructables.com/Astable-microvibrator-LED-flasher-with-Circuit-Scr",
+    "page/index.html": "/index.html",
+    "page/1/index.html": "/index.html",
+    "page/2/index.html": "/index.html",
+    "page/3/index.html": "/index.html",
+    "page/4/index.html": "/index.html",
+    "page/5/index.html": "/index.html"
 }
 
 copybutton_exclude = ".linenos, .gp"
