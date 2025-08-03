@@ -51,6 +51,9 @@ div.document .page-date {
     padding-right: 5px;
     font-size: 0.7em;
 }
+ul:has(.toc-date) {
+    list-style: none;
+}
 
 /* theme overrides */
 #show_right_sidebar {
