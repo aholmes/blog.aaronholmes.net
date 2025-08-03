@@ -148,6 +148,7 @@ def collect_meta_dates(app: Sphinx, doctree: DocumentNode):
 
 # <a class="reference internal" href="subdoc.html">Title</a>
 rx = re.compile(r'(<a[^>]+href=")([^"]+)\.html(".*?>)([^<]+)(</a>)')
+date_index_rx = re.compile(r'(\d{4})/index')
 def add_dates_to_index_body(app: Sphinx, pagename: str, templatename: str, context: dict[str, Any], doctree: DocumentNode) -> str | None:
     """
     Insert a span containing the page's date (from metadata).
@@ -158,8 +159,13 @@ def add_dates_to_index_body(app: Sphinx, pagename: str, templatename: str, conte
 
     def repl(m: re.Match[str]) -> str:
         href, doc, rest, text, tail = m.groups()
-        docname = Path(html.unescape(doc)).stem
-        date = env.metadata.get(docname, {}).get("date")
+
+        pagename_path = Path(html.unescape(pagename))
+        doc_name = str(Path(html.unescape(doc)))
+        if not (doc_metadata := env.metadata.get(doc_name, {})):
+            doc_metadata = env.metadata.get(str(Path(pagename_path.parent, doc_name)), {})
+
+        date = doc_metadata.get("date")
         if not date:
             return m.group(0)
 
