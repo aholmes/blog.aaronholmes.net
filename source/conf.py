@@ -66,9 +66,11 @@ extensions: list[str] = [
     "sphinx.ext.autosectionlabel",
     "sphinx_copybutton",
     "sphinx.ext.extlinks",
-    "sphinx_tags"
+    "sphinx_tags",
+    "sphinxext.rediraffe"
 ]
 
+rediraffe_redirects = "redirects.txt"
 
 copybutton_exclude = ".linenos, .gp"
 copybutton_prompt_text = r">>> |\.\.\. |\$ "
