@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     name: Checkout and Setup
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     env:
