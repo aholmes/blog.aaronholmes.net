@@ -25,6 +25,7 @@ sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
 if TYPE_CHECKING:
     class PageDate(InlineNode, Element):
         ...
+# TODO move the directive into its own module
 sys.path.append(str(Path('../lib/pagedate').resolve()))
 from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
@@ -70,6 +71,11 @@ extensions: list[str] = [
     "sphinx_reredirects"
 ]
 
+# Old blog URLs.
+# The index.html is used because CloudFlare munges the
+# redirect URL to include it. Without it, Sphinx isn't
+# able to build the old "fake" pages that are used for
+# redirects.
 redirects = {
     "2024-08-08_MakingACopperWireTree_BoutrosLab/index.html": "/2024/making_a_copper_wire_tree.html",
     "2022-09-22_WinterIsCanning_BoutrosLab/index.html": "/2022/winter_is_canning_2022.html",
@@ -103,7 +109,7 @@ redirects = {
     "page/3/index.html": "/index.html",
     "page/4/index.html": "/index.html",
     "page/5/index.html": "/index.html",
-    "author/aaron/index.html": "/index.html",
+    "author/aaron/index.html": "/index.html"
 }
 
 copybutton_exclude = ".linenos, .gp"

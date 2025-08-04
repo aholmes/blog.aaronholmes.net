@@ -4,10 +4,10 @@ Outside of work, his interests include IoT, smart home,
 hardware and electronics, gardening, playing drums, and more.*
 
 `[Published papers] <https://papers.aaronholmes.net>`_ —
-`[CodePen] <https://codepen.io/aholmes/>`_ —
 `[GitHub] <https://github.com/aholmes>`_ —
-`[CodeMentor] <https://www.codementor.io/@aholmes>`_ —
-`[LinkedIn] <https://www.linkedin.com/in/aaholmes/>`_
+`[LinkedIn] <https://www.linkedin.com/in/aaholmes/>`_ —
+`[CodePen] <https://codepen.io/aholmes/>`_ —
+`[CodeMentor] <https://www.codementor.io/@aholmes>`_
 
 Posts
 =====
