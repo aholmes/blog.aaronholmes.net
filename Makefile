@@ -1,3 +1,5 @@
+export BUILD_ENV ?= development
+
 VENV ?= .venv
 ACTIVATE_VENV := . $(VENV)/bin/activate
 

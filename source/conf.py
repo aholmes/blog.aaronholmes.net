@@ -19,6 +19,17 @@ from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
 from sphinx.environment import BuildEnvironment
 from sphinx.roles import XRefRole
+from enum import StrEnum
+
+class BuildEnv(StrEnum):
+    DEVELOPMENT = "development"
+    PRODUCTION = "production"
+
+BUILD_ENV = (
+    BuildEnv(BUILD_ENV_STR)
+     if (BUILD_ENV_STR := os.getenv("BUILD_ENV")) in [e.value for e in BuildEnv]
+     else BuildEnv.DEVELOPMENT
+)
 
 sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
 sys.path.append(str(Path('../lib/sphinx-conestack-theme').resolve()))
@@ -48,12 +59,16 @@ html_theme = "conestack"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
-html_baseurl = "/"
 html_theme_options = {
     "logo_url": "",
     "logo_title": project,
     "github_url": "https://github.com/aholmes/aaronholmes.net"
 }
+
+if BUILD_ENV == BuildEnv.DEVELOPMENT:
+    html_baseurl = "/"
+else:
+    html_baseurl = "https://aaronholmes.net/"
 
 
 tags_create_tags = True

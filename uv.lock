@@ -25,7 +25,7 @@ requires-dist = [
     { name = "sphinx-autobuild", specifier = "~=2024.10.3" },
     { name = "sphinx-copybutton", specifier = "~=0.5.2" },
     { name = "sphinx-reredirects", specifier = "~=1.0.0" },
-    { name = "sphinx-sitemap", specifier = ">=2.7.2" },
+    { name = "sphinx-sitemap", specifier = "~=2.7.2" },
     { name = "sphinx-toolbox", specifier = "~=4.0.0" },
 ]
 
