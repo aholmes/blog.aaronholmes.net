@@ -96,7 +96,7 @@ wheels = [
 ]
 
 [[package]]
-name = "blog-aaronholmes-net"
+name = "aaronholmes-net"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [

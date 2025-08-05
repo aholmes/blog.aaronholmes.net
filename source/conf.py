@@ -48,6 +48,10 @@ html_theme = "conestack"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
+html_theme_options = {
+    "logo_url": "",
+    "github_url": "http://github.com/aholmes"
+}
 
 
 tags_create_tags = True
@@ -118,15 +122,15 @@ github_ref = os.environ.get("GITHUB_REF") or "main"
 
 extlinks: dict[str, tuple[str, str|None]] = {
     "source": (
-        f"https://github.com/aholmes/blog.aaronholmes.net/blob/{github_ref}/%s",
+        f"https://github.com/aholmes/aaronholmes.net/blob/{github_ref}/%s",
         None,
     ),
     "example": (
-        f"https://github.com/aholmes/blog.aaronholmes.net/blob/{github_ref}/examples/%s",
+        f"https://github.com/aholmes/aaronholmes.net/blob/{github_ref}/examples/%s",
         "Review example sources [%s]",
     ),
     "archive": (
-        "https://blog.aaronholmes.net.github.io/aholmes/blog.aaronholmes.net/_downloads/%s.zip",
+        "https://aholmes.github.io/aaronholmes.net/_downloads/%s.zip",
         "Download example archive [%s.zip]",
     )
 }

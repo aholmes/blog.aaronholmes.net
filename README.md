@@ -6,7 +6,7 @@ This repository contains reStructuredText-formatted blog-style posts for [aaronh
 
 This repository uses Sphinx to compile reStructuredText to HTML.
 
-The files published to https://aholmes.github.io/blog.aaronholmes.net.
+The files published to https://aholmes.github.io/aaronholmes.net.
 
 The domain name aaronholmes.net contains a CNAME, A, and AAAA records for the GitHub website.
 
