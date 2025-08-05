@@ -1,5 +1,11 @@
+:orphan:
+
 404
 ===
+
+You reached a non-existent page!
+
+Try :ref:`searching <search>` for your query.
 
 .. raw:: html
 
