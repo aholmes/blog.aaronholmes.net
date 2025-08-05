@@ -55,25 +55,6 @@ ul:has(.toc-date) {
     list-style: none;
 }
 
-/* theme overrides */
-#show_right_sidebar {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-#show_right_sidebar p,
-#right_sidebar p {
-    margin-top: -3px;
-    margin-bottom: 5px;
-}
-#right_sidebar .page_toc ul {
-    margin-top: 0;
-}
-div.document {
-    margin-right: 0;
-}
-#right_sidebar {
-    display: none;
-}
 
 /* disqus comments */
 #disqus_thread {
