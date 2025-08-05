@@ -11,5 +11,6 @@ dependencies = [
     "sphinx-autobuild ~= 2024.10.3",
     "sphinx-copybutton ~= 0.5.2",
     "sphinx-reredirects ~= 1.0.0",
+    "sphinx-sitemap ~= 2.7.2",
     "sphinx-toolbox ~= 4.0.0",
 ]

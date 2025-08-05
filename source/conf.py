@@ -48,6 +48,7 @@ html_theme = "conestack"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
+html_baseurl = "/"
 html_theme_options = {
     "logo_url": "",
     "logo_title": project,
@@ -70,8 +71,12 @@ extensions: list[str] = [
     "sphinx_copybutton",
     "sphinx.ext.extlinks",
     "sphinx_tags",
-    "sphinx_reredirects"
+    "sphinx_reredirects",
+    "sphinx_sitemap"
 ]
+
+
+sitemap_url_scheme = "{link}"
 
 # Old blog URLs.
 # The index.html is used because CloudFlare munges the
