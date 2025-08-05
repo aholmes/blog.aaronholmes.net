@@ -21,6 +21,7 @@ from sphinx.environment import BuildEnvironment
 from sphinx.roles import XRefRole
 
 sys.path.append(str(Path('../lib/sphinx-tags/src').resolve()))
+sys.path.append(str(Path('../lib/sphinx-conestack-theme').resolve()))
 
 if TYPE_CHECKING:
     class PageDate(InlineNode, Element):
@@ -43,19 +44,15 @@ extensions: list[str] = []
 templates_path: list[str] = ['_templates']
 exclude_patterns: list[str] = []
 
-html_theme = "piccolo_theme"
+html_theme = "conestack"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
 
-html_theme_options: dict[str, Any] = {
-    "globaltoc_collapse": False
-}
-
 
 tags_create_tags = True
 tags_intro_text = ""
-tags_page_title = "Tag"
+tags_page_title = ""
 tags_index_head = "Tags"
 tags_page_header = "Pages with this tag"
 
