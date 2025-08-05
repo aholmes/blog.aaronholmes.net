@@ -1,3 +1,6 @@
 [submodule "lib/sphinx-tags"]
 	path = lib/sphinx-tags
 	url = git@github.com:aholmes/sphinx-tags.git
+[submodule "lib/sphinx-conestack-theme"]
+	path = lib/sphinx-conestack-theme
+	url = git@github.com:aholmes/sphinx-conestack-theme.git
