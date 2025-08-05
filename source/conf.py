@@ -50,7 +50,7 @@ html_static_path: list[str] = ["_static"]
 html_css_files: list[str] = ["custom.css"]
 html_theme_options = {
     "logo_url": "",
-    "github_url": "http://github.com/aholmes"
+    "github_url": "https://github.com/aholmes/aaronholmes.net"
 }
 
 
