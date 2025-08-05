@@ -3,8 +3,9 @@ enterprise softare development, entertainment industry, and academia.
 Outside of work, his interests include IoT, smart home,
 hardware and electronics, gardening, playing drums, and more.*
 
-`[Published papers] <https://papers.aaronholmes.net>`_ —
+`[Publications] <https://papers.aaronholmes.net>`_ —
 `[GitHub] <https://github.com/aholmes>`_ —
+`[Gists] <https://gist.github.com/aholmes>`_ —
 `[LinkedIn] <https://www.linkedin.com/in/aaholmes/>`_ —
 `[CodePen] <https://codepen.io/aholmes/>`_ —
 `[CodeMentor] <https://www.codementor.io/@aholmes>`_
