@@ -32,6 +32,21 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
 #cs-nav > h1 {
     margin-top: -0.5rem;
 }
+/*
+weird quirk in theme that doesn't style this,
+but instead relies on javascript to set the
+class `active` which then styles it.
+*/
+.cs-nav-toc li.toctree-l2 a.current,
+.cs-nav-toc li.toctree-l2 a.current:visited,
+.cs-nav-toc li.toctree-l2 a.current:active,
+.cs-nav-toc li.toctree-l2 a.current:hover {
+    font-weight: bold;
+}
+.cs-nav-toc li.toctree-l1.current > a.reference::before,
+.cs-nav-toc li.toctree-l1.current > a.reference::before {
+    content: "\f282";
+}
 
 /* date and tag subheader*/
 p:has(.page-date),
