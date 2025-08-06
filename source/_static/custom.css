@@ -79,6 +79,13 @@ div.document .page-date {
 }
 ul:has(.toc-date) {
     list-style: none;
+    padding-left: 0.3rem;
+}
+ul:has(.toc-date) > li > a {
+    display: none;
+}
+ul:has(.toc-date) ul {
+    padding-left: 0;
 }
 
 
