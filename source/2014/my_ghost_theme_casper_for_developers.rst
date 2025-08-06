@@ -27,7 +27,7 @@ Ace editor
 As mentioned above, my first change was to add `Ace editor <http://ace.c9.io/>`__. You can see it in action in this post, but here's a screenshot as well.
 
 .. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/javascript_ace_capture.jpg
-   :target: http://aholmes.azurewebsites.net/canvas-vector-animations-with-css-or-javascript/#therenderingmethoditself
+   :target: javascript_vector_animations_with_divs_or_canvas.html#the-rendering-method-itself-part-two
 
 Google+ comments
 ----------------
