@@ -472,7 +472,7 @@ To summarize, here are the basic pieces you need to get this working.
         constructor(/*list of dependencies*/)
         {
             // It's important to add `link` to the prototype or you will end up with state issues.
-            // See http://blog.aaronholmes.net/writing-angularjs-directives-as-typescript-classes/#comment-2111298002 for more information.
+            // See https://aaronholmes.net/2015/writing_angularjs_directives_as_typescript_classes.html#comment-2111298002 for more information.
             MyDirective.prototype.link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) =>
             {
                 /*handle all your linking requirements here*/
@@ -498,7 +498,7 @@ To summarize, here are the basic pieces you need to get this working.
         constructor(/*list of dependencies*/)
         {
             // It's important to add `link` to the prototype or you will end up with state issues.
-            // See http://blog.aaronholmes.net/writing-angularjs-directives-as-typescript-classes/#comment-2111298002 for more information.
+            // See https://aaronholmes.net/2015/writing_angularjs_directives_as_typescript_classes.html#comment-2111298002 for more information.
             MyDirective.prototype.link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) =>
             {
                 /*handle all your linking requirements here*/
