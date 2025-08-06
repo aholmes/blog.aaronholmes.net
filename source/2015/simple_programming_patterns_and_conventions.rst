@@ -20,8 +20,8 @@ A final note on the code below. I did not enclose all code in the required class
 
 Enjoy!
 
-Conventions
------------
+Code Conventions
+----------------
 
 Branching flow-control statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,8 +49,8 @@ Breaking out of a loop
 
 ----
 
-Patterns
---------
+Code Patterns
+-------------
 
 
 Prevent a method from executing more than once

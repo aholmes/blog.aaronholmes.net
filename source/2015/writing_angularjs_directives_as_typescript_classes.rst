@@ -16,9 +16,9 @@ TL;DR? Read the implementation details here.
 
 **Note:** This post was written for AngularJS 1.x. Angular 2+ has different conventions that make parts of this post obsolete.
 
-`TypeScript <http://www.typescriptlang.org/>`_ is a fantastic language that extends JavaScript by providing static typing syntax. Writing TypeScript to utilize `AngularJS <https://angularjs.org/>`_ can be clunky at times, and one pain point for me was in writing `directives <https://docs.angularjs.org/guide/directive>`_.
+`TypeScript <http://www.typescriptlang.org/>`__ is a fantastic language that extends JavaScript by providing static typing syntax. Writing TypeScript to utilize `AngularJS <https://angularjs.org/>`__ can be clunky at times, and one pain point for me was in writing `directives <https://docs.angularjs.org/guide/directive>`__.
 
-AngularJS expects to be `fed <https://docs.angularjs.org/api/ng/provider/$compileProvider#directive>`_ a factory function that returns an object that defines parameters and functionality for your directive.
+AngularJS expects to be `fed <https://docs.angularjs.org/api/ng/provider/$compileProvider#directive>`__ a factory function that returns an object that defines parameters and functionality for your directive.
 
 In JavaScript, that looks like this.
 
@@ -36,7 +36,7 @@ In JavaScript, that looks like this.
         };
     }
 
-A direct translation of this to TypeScript looks like this. By the way, I am using the `angular.d.ts <https://github.com/borisyankov/DefinitelyTyped/blob/master/angularjs/angular.d.ts>`_ type definition file from `definitelytyped.org <http://definitelytyped.org/>`_.
+A direct translation of this to TypeScript looks like this. By the way, I am using the `angular.d.ts <https://github.com/borisyankov/DefinitelyTyped/blob/master/angularjs/angular.d.ts>`__ type definition file from `definitelytyped.org <http://definitelytyped.org/>`__.
 
 .. code-block:: typescript
 
@@ -416,9 +416,9 @@ Gotchas
 
 * It sucks that many parts of the directive function signature are duplicated in the function returned from Factory, the instantiation call, and the constructor signature. I would love to hear alternate ways to accomplish this.
 
-  * `b091 <https://disqus.com/by/bogusawskrzypkowiak/>`_ discovered a way to avoid both the redundancies and the Factory method by using decorators. See `this comment <https://blog.aaronholmes.net/writing-angularjs-directives-as-typescript-classes/#comment-2206875553>`_ for more information.
+  * `b091 <https://disqus.com/by/bogusawskrzypkowiak/>`__ discovered a way to avoid both the redundancies and the Factory method by using decorators. See `this comment <#comment-6748633131>`__ for more information.
 
-* It is possible to unintentially create only a single instance of your directive by binding functions and variables in the constructor. For any data members that need to be unique between instances, ensure that they are added to the classes ``prototype`` rather than the instance itself. See `this comment <https://blog.aaronholmes.net/writing-angularjs-directives-as-typescript-classes/#comment-2111298002>`_ for more information.
+* It is possible to unintentially create only a single instance of your directive by binding functions and variables in the constructor. For any data members that need to be unique between instances, ensure that they are added to the classes ``prototype`` rather than the instance itself. See `this comment <#comment-2111298002>`__ for more information.
 
 Back to the basics
 ^^^^^^^^^^^^^^^^^^
