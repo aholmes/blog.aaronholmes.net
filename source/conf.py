@@ -58,6 +58,7 @@ exclude_patterns: list[str] = []
 html_theme = "conestack"
 pygments_style = "one-dark"
 html_static_path: list[str] = ["_static"]
+html_extra_path: list[str] = ["ads.txt"]
 html_css_files: list[str] = ["custom.css"]
 html_theme_options = {
     "logo_url": "",
