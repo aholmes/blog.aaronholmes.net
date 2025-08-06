@@ -95,8 +95,8 @@ The animation is bootstrapped at the very end with ``run()``.
 
 This same method is used by both the ``<div>`` and ``<canvas>`` approach. We run ``run.make_frame = makeFrameMethod;`` to generate the method we need to use based on the "mode" option, which is either "dom" or "canvas".
 
-Bootstrapping the rendering method
-----------------------------------
+Bootstrapping the ``<div>`` rendering method
+--------------------------------------------
 
 Okay, here's the fun part. ``makeFrameMethod`` does two things when running in "dom" mode.
 
@@ -213,8 +213,8 @@ While the ``<div>`` method works, it's unfortunately very inefficient. Even when
 
 All the methods for the ``<canvas>`` approach to this project have the same name as the ``<div>`` approach. Only the inner-workings have changed.
 
-Bootstrapping the rendering method
-----------------------------------
+Bootstrapping the ``<canvas>`` rendering method
+-----------------------------------------------
 
 We have to do a little more work to get set up using ``<canvas>``.
 

@@ -10,10 +10,10 @@ Displaying code with Ace on Ghost
 
 After getting Ghost set up, I was disappointed to see the lack of syntax highlighting in Casper's codeblocks. Additionally, code posted on sites where I can't copy, edit, or scroll around is a huge pet peeve of mine. I wanted to provide a usable codeblock for any readers of my site. Having used `Ace <http://ace.c9.io/>`_ before, I knew it did exactly what I was looking for. After some quick Googling and not finding a solution for this already, I decided to do it myself.
 
-Update
-------
+Update :date:`2014-11-30 <%Y-%m-%d>`
+------------------------------------
 
-You can skip all the work below and use my `theme <https://github.com/aholmes/Casper>`_, which includes these changes.
+You can skip all the work below and use my `theme <https://github.com/aholmes/Casper>`__, which includes these changes.
 
 Adding Ace to your blog
 -----------------------
@@ -52,14 +52,14 @@ Change back to the root directory for your blog.
     Aaron@PINGU ~/Source/Repos/aholmes blog (master)  
     $
 
-Add Ace as a Git `submodule <http://git-scm.com/book/en/v2/Git-Tools-Submodules>`_.
+Add Ace as a Git `submodule <http://git-scm.com/book/en/v2/Git-Tools-Submodules>`__.
 
 .. code-block:: bash
 
     Aaron@PINGU ~/Source/Repos/aholmes blog (master)  
     $ git submodule add https://github.com/ajaxorg/ace-builds.git ./content/themes/casper-aholmes/assets/js/ace-builds
 
-Then check out the latest `tagged <http://git-scm.com/book/en/v2/Git-Basics-Tagging>`_ version:
+Then check out the latest `tagged <http://git-scm.com/book/en/v2/Git-Basics-Tagging>`__ version:
 
 .. code-block:: bash
 

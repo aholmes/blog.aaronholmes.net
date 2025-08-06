@@ -5,7 +5,7 @@ import re
 import sys
 import zipfile
 from pathlib import Path
-from typing import Any, TYPE_CHECKING
+from typing import Any, TYPE_CHECKING, Callable
 from datetime import datetime
 
 from docutils.nodes import (
@@ -13,7 +13,9 @@ from docutils.nodes import (
     document as DocumentNode,
     meta as MetaNode,
     inline as InlineNode,
-    raw as RawNode
+    raw as RawNode,
+    system_message,
+    Node
 )
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
@@ -252,6 +254,23 @@ class PageDateDirective(Directive):
     def run(self):
         return [PageDate('')]
 
+def get_time_node(
+    date_raw: str,
+    format: str = "%d %B %Y",
+    transform: Callable[[str], str] | None = None):
+    try:
+        dt  = datetime.strptime(date_raw, "%Y-%m-%d")
+        txt = dt.strftime(format).lstrip("0")
+        if transform:
+            txt = transform(txt)
+    except ValueError:
+        txt = date_raw
+
+    return RawNode(
+        '',
+        f'<time class="page-date" datetime="{date_raw}">{txt}</time>',
+        format='html'
+    )
 
 def add_dates_to_page(app: Sphinx, doctree: DocumentNode, docname: str):
     """
@@ -264,21 +283,23 @@ def add_dates_to_page(app: Sphinx, doctree: DocumentNode, docname: str):
             node.replace_self([])
         return
 
-    try:
-        dt  = datetime.strptime(date_raw, "%Y-%m-%d")
-        txt = dt.strftime("%d %B %Y").lstrip("0")
-    except ValueError:
-        txt = date_raw
-
-    html_time = RawNode(
-        '',
-        f'<time class="page-date" datetime="{date_raw}">{txt}</time>',
-        format='html'
-    )
+    html_time = get_time_node(date_raw, transform=lambda date_txt: date_txt.strip("0"))
 
     for node in doctree.traverse(PageDate):
         node.replace_self(html_time)
 
+class DateRole(XRefRole):
+    """
+    Used like:
+    :date:`2025-08-06`
+    :date:`2025-08-06 <%Y-%m-%d>`
+
+    Uses the default output format "%d %B %Y"
+    Input format must be "%Y-%m-%d"
+    """
+    def run(self) -> tuple[list[Node], list[system_message]]:
+        html_time = get_time_node(self.title, self.target)
+        return [html_time], []
 
 rst_prolog = """
 .. role:: underline
@@ -309,6 +330,7 @@ def setup(app: Sphinx) -> None:
     _ = app.add_node(PageDate)
     _ = app.add_directive("pagedate", PageDateDirective)
     _ = app.add_role("tag", TagXRefRole())
+    _ = app.add_role("date", DateRole())
     _ = app.connect("build-finished", create_zips_for_examples)
     _ = app.connect("doctree-read", collect_meta_dates)
     _ = app.connect('html-page-context', add_dates_to_index_body)

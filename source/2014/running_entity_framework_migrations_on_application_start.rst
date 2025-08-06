@@ -8,16 +8,16 @@ Running Entity Framework Migrations on Application Start
 
 .. tags:: C#, Entity Framework, ASP.NET, .NET
 
-`Entity Framework <https://www.asp.net/entity-framework>`_ is an ORM developed by Microsoft. It has a useful set of tools and conventions for automatically managing database schema changes called `Code First Migrations <http://msdn.microsoft.com/en-us/data/jj591621.aspx>`_. My only gripe is that, unless you are willing to do some digging, migrations can only be managed with the `PowerShell <http://microsoft.com/powershell>`_ commands ``Add-Migration`` and ``Update-Database``. Even `automatic migrations <http://msdn.microsoft.com/en-us/data/jj554735.aspx>`_ require users to run ``Update-Database``.
+`Entity Framework <https://www.asp.net/entity-framework>`__ is an ORM developed by Microsoft. It has a useful set of tools and conventions for automatically managing database schema changes called `Code First Migrations <http://msdn.microsoft.com/en-us/data/jj591621.aspx>`__. My only gripe is that, unless you are willing to do some digging, migrations can only be managed with the `PowerShell <http://microsoft.com/powershell>`__ commands ``Add-Migration`` and ``Update-Database``. Even `automatic migrations <http://msdn.microsoft.com/en-us/data/jj554735.aspx>`__ require users to run ``Update-Database``.
 
-There may be many reasons you would want to have migrations automatically run, rather than managing them manually. One reason for me is that I did not want to require that other developers on my team manually run ``Update-Database`` any time there is a database schema change. I feel that it is disruptive to the philosophy of `Getting Shit Done <https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280>`_. On the flip side, not manually managing your databases runs the risk of things breaking and going unnoticed, so use this with care.
+There may be many reasons you would want to have migrations automatically run, rather than managing them manually. One reason for me is that I did not want to require that other developers on my team manually run ``Update-Database`` any time there is a database schema change. I feel that it is disruptive to the philosophy of `Getting Shit Done <https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280>`__. On the flip side, not manually managing your databases runs the risk of things breaking and going unnoticed, so use this with care.
 
 Well, I did the digging, and here's what I came up with to run migrations when an ASP.NET website starts.
 
-Update
-------
+Update :date:`2014-11-29 <%Y-%m-%d>`
+------------------------------------
 
-Somehow I had forgotten that using the database initializer `MigrateDatabaseToLatestVersion <http://msdn.microsoft.com/en-us/library/hh829293%28v=vs.113%29.aspx>`_ is another way to accomplish this. Definitely give it a once over.
+Somehow I had forgotten that using the database initializer `MigrateDatabaseToLatestVersion <http://msdn.microsoft.com/en-us/library/hh829293%28v=vs.113%29.aspx>`__ is another way to accomplish this. Definitely give it a once over.
 
 ----
 

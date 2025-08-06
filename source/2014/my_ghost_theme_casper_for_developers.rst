@@ -14,17 +14,17 @@ For whatever reason, I still wasn't satisfied with things, so I kept changing bi
 
 Hope you enjoy, and I will definitely accept pull requests if you send them!
 
-* `Ace Editor <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#aceeditor>`_
-* `Google+ comments <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#googlecomments>`_
-* `Disqus comments <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#disquscomments>`_
-* `Google Analytics <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#googleanalytics>`_
-* `Linkable headers <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#linkableheaders>`_
-* `Fixed-position header and footer across the site <https://blog.aaronholmes.net/my-ghost-theme-a-fork-of-casper/#fixedpositionheaderandfooteracrossthesite>`_
+* `Ace Editor`_
+* `Google+ comments`_
+* `Disqus comments`_
+* `Google Analytics`_
+* `Linkable headers`_
+* `Fixed-position header and footer across the site`_
 
 Ace editor
 ----------
 
-As mentioned above, my first change was to add `Ace editor <http://ace.c9.io/>`_. You can see it in action in this post, but here's a screenshot as well.
+As mentioned above, my first change was to add `Ace editor <http://ace.c9.io/>`__. You can see it in action in this post, but here's a screenshot as well.
 
 .. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/javascript_ace_capture.jpg
    :target: http://aholmes.azurewebsites.net/canvas-vector-animations-with-css-or-javascript/#therenderingmethoditself
@@ -36,7 +36,7 @@ Casper, and Ghost in general, doesn't have a commenting system for posts out-of-
 
 This feature is optional in my theme.
 
-`Code link <https://github.com/aholmes/Casper/blob/master/post.hbs#L76-L86>`_
+`Code link <https://github.com/aholmes/Casper/blob/master/post.hbs#L76-L86>`__
 
 .. code-block:: html
 
@@ -63,7 +63,7 @@ Here's what the module looks like in each post's footer.
 
 .. image:: /_static/images/2014/my_ghost_theme_casper_for_developers/footer_capture.jpg
    
-`Code link <https://github.com/aholmes/Casper/blob/master/post.hbs#L88-L98>`_
+`Code link <https://github.com/aholmes/Casper/blob/master/post.hbs#L88-L98>`__
    
 .. code-block:: html
 
@@ -86,7 +86,7 @@ I wanted to track how much traffic my blog would get, so I added Google Analytic
 
 This feature is optional in my theme.
 
-`Code link <https://github.com/aholmes/Casper/blob/master/default.hbs#L19-L32>`_
+`Code link <https://github.com/aholmes/Casper/blob/master/default.hbs#L19-L32>`__
 
 .. code-block:: html
 
