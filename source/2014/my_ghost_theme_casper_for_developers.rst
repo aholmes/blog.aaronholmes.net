@@ -8,7 +8,7 @@ My Ghost theme; Casper for developers
 
 .. tags:: Ghost
 
-I started using Ghost about a week ago. My (honest) first impression was that code blocks are unstyled and uneditable, which is a huge pet peeve of mine. I `fixed that <FIXME>`_ problem by forking Casper and adding Ace editor. You can find my fork of the theme here: https://github.com/aholmes/Casper.
+I started using Ghost about a week ago. My (honest) first impression was that code blocks are unstyled and uneditable, which is a huge pet peeve of mine. I :ref:`fixed that <Displaying code with Ace on Ghost>` problem by forking Casper and adding Ace editor. You can find my fork of the theme here: https://github.com/aholmes/Casper.
 
 For whatever reason, I still wasn't satisfied with things, so I kept changing bits. Here's a list of the changes I made, and what is available to you if you use this theme.
 

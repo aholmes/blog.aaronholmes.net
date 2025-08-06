@@ -8,7 +8,7 @@ Circuit Scribe art project step #1
 
 .. tags:: Circuit-Scribe, Circuit-Scribe-Seattle
 
-I finally started my "cityscape" project with Circuit Scribe! Here's a quick video showing the first pencil sketches. I will be posting these as I go along under the `Circuit Scribe - Seattle <FIXME>`_ tag, so stay tuned for more!
+I finally started my "cityscape" project with Circuit Scribe! Here's a quick video showing the first pencil sketches. I will be posting these as I go along under the :ref:`Circuit-Scribe-Seattle` tag, so stay tuned for more!
 
 .. raw:: html
 
