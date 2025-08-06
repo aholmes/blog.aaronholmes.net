@@ -34,7 +34,8 @@ autobuild: $(VENV) Makefile
 
 clean-sphinx:
 	@$(ACTIVATE_VENV) && \
-	$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) && \
+	rm -rf "$(SOURCEDIR)/_tags"
 
 
 clean: clean-sphinx
