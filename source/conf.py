@@ -43,7 +43,7 @@ if TYPE_CHECKING:
 sys.path.append(str(Path('../lib/pagedate').resolve()))
 from pagedate import PageDate # pyright: ignore[reportMissingImports,reportUnknownVariableType]
 
-project = "Aaron Holmes' thoughts"
+project = "Bits, Bobs & Breakpoints \u2014 Aaron Holmes"
 html_title = project
 html_short_title = html_title
 copyright = '2025, Aaron Holmes'
