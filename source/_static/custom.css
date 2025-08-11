@@ -59,6 +59,9 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
     pointer-events: none;
     z-index: 0;
 }
+#cs-sidebar {
+    margin-left: 0 !important;
+}
 
 .cs-nav-toc li.toctree-l1 > span.toggle {
     z-index: 1;
