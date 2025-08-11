@@ -1,4 +1,4 @@
-*Aaron Holmes is a software engineer with experience in
+*Aaron Holmes is a software engineer with 20 years of experience in
 enterprise softare development, entertainment industry, and academia.
 Outside of work, his interests include IoT, smart home,
 hardware and electronics, gardening, playing drums, and more.*
