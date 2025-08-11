@@ -67,6 +67,11 @@ footer .next-chapter::after {
     content: " >> ";
 }
 
+.gravatar {
+    border-radius: 50%;
+    margin-left: -1rem;
+}
+
 /* don't navigate when the > is clicked. */
 .cs-nav-toc li.toctree-l1 > span.toggle {
     z-index: 1;

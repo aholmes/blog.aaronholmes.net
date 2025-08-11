@@ -66,7 +66,8 @@ html_css_files: list[str] = ["custom.css"]
 html_theme_options = {
     "logo_url": "",
     "logo_title": project,
-    "github_url": "https://github.com/aholmes/aaronholmes.net"
+    "github_url": "https://github.com/aholmes/aaronholmes.net",
+    "gravatar_image": "https://www.gravatar.com/avatar/90b4e98000509a7ce63d135b954aeeddcf882ba6696ff7ab058f976d33a2bde2?d=&s=40"
 }
 
 if BUILD_ENV == BuildEnv.DEVELOPMENT:
