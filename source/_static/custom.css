@@ -29,6 +29,10 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
 }
 
 /* theme overrides */
+:root {
+    --cs-bg-color: #162e46;
+}
+
 #cs-nav > h1 {
     margin-top: -0.5rem;
 }
