@@ -49,6 +49,7 @@ html_short_title = html_title
 copyright = '2025, Aaron Holmes'
 author = 'Aaron Holmes'
 html_favicon = '_static/favicon.ico'
+html_show_sphinx = False
 
 master_doc = "index"
 
