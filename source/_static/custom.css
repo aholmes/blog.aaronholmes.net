@@ -32,6 +32,37 @@ https://github.com/uclahs-cds/Ligare/blob/2021ffdeac4b92cf726a8fc35866a069119cb7
 #cs-nav > h1 {
     margin-top: -0.5rem;
 }
+.cs-nav-toc ul ul {
+    padding-left: 0.5rem;
+}
+
+.cs-nav-toc a {
+    position: relative;
+    display: block;
+    line-height: 1.4;
+}
+/* https://stackoverflow.com/questions/48870838/css-show-indicator-that-line-wrapped */
+.cs-nav-toc ul ul a::before {
+    content: "\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A\21B3\A";
+    position: absolute;
+    top: 0;
+    padding-right: 1px;
+    /*left: 0.2em;*/
+    width: 0.9em;
+    height: 100%;
+    overflow: hidden;
+    white-space: pre;
+    line-height: inherit;
+    color: rgba(0,0,0,0.2);
+    font-style: normal;
+    font-weight: 100;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cs-nav-toc li.toctree-l1 > span.toggle {
+    z-index: 1;
+}
 /*
 weird quirk in theme that doesn't style this,
 but instead relies on javascript to set the
