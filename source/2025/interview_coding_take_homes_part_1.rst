@@ -141,8 +141,11 @@ is equivalent based on its properties. For example, a Product ID of ``"BEVG"``
 represents a Product ID of ``"BEVG"`` regardless of how many ``"BEVG"`` entries
 there are for a Purchase.
 
-Review `classStructure.puml <classStructure.puml>`_ to understand the relations
+Review `classStructure.puml </_static/files/2025/interview_coding_take_homes_part_1/classStructure.puml>`__ to understand the relations
 between these types.
+
+.. image:: /_static/images/2025/interview_coding_take_homes_part_1/classStructure.svg
+   :target: /_static/images/2025/interview_coding_take_homes_part_1/classStructure.svg
 
 With the exception of ``BarcodeValue``, these Value types extend
 ``ValueBase<T>``. This is done to manage the code that determines equality

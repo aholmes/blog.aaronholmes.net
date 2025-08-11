@@ -1,0 +1,100 @@
+@startuml
+package "Domain" as Domain {
+    class ProductTypeValueKeys {
+        +List<string> SearchValidProductTypeKey(string, int = 1)
+        +AddKey(string)
+        +AddKey(ProductType)
+    }
+    note top
+    ProductTypeValueKeys uses a BK Tree to store Product Type keys
+    end note
+
+    class PurchaseEntity {
+        DateTime Timestamp
+        string Customer
+        BarcodeValue[] Barcodes
+        --
+        {static} +Task<PurchaseEntity> CreateFromStream(Stream) <<async>>
+    }
+    note left
+    Timestamp is in the format MMDDYYYY
+        It is a char[8] in the file.
+    end note
+
+    class PurchaseAggregate {
+        PurchaseEntity Purchase
+        --
+        +PurchaseAggregate(PurchaseEntity) <<constructor>>
+        +UniqueId[] GetUniqueIds()
+        +IGrouping<string, BarcodeValue> GetMostCommonProductByType()
+        +ProductSubtype[] GetProductSubtypes(ProductType)
+    }
+
+    class "char[4]" as char4
+    class "char[6]" as char6
+    class "char[20]" as char20
+
+    ProductType <|-- char4
+    ProductSubtype <|-- char6
+    UniqueId <|-- char20
+    note left of ProductSubtype
+    Each of these char[] types is a string,
+        this is just to denote the size.
+    end note
+
+    class BarcodeValue {
+        ProductType ProductType
+        ProductSubtype ProductSubtype
+        UniqueId Id
+    }
+
+    BarcodeValue *-- ProductType : has
+    BarcodeValue *-- ProductSubtype : has
+    BarcodeValue *-- UniqueId : has
+
+    ProductTypeValueKeys *-- ProductType : has many
+
+    PurchaseEntity *- BarcodeValue : has many
+
+    PurchaseAggregate *-- PurchaseEntity : has many
+}
+
+package "Console Writing Visitor" as ConsoleWritingVisitor {
+    interface IVisitor<T> {
+        +void Visit(T dispatcher)
+    }
+    class ConsoleWritingVisitor implements IVisitor {
+        +T ConsoleWriter
+        +ConsoleWritingVisitor(IConsole) <<constructor>>
+        +void WriteLine(ConsoleWriter)
+    }
+    abstract class ConsoleWriter {
+        +virtual void Accept(ConsoleWritingVisitor)
+        +{abstract} string GetOutput()
+    }
+    class PurchaseSummary extends ConsoleWriter {
+        +PurchaseSummary(PurchaseEntity) <<constructor>>
+        +override string GetOutput()
+    }
+    class PurchaseDetail extends ConsoleWriter {
+        +PurchaseDetail(PurchaseEntity) <<constructor>>
+        +override string GetOutput()
+    }
+    class ProductDetail extends ConsoleWriter {
+        +ProductDetail(PurchaseEntity) <<constructor>>
+        +override string GetOutput()
+    }
+}
+
+interface IConsole {
+    +void Write(string)
+    +void WriteLine()
+    +void WriteLine(string)
+    +ConsoleKeyInfo ReadKey()
+    +int Read()
+    +string ReadLine()
+
+}
+
+class ConsoleWrapper implements IConsole 
+@enduml
