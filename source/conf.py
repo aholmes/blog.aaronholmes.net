@@ -14,6 +14,7 @@ from docutils.nodes import (
     meta as MetaNode,
     inline as InlineNode,
     raw as RawNode,
+    container as ContainerNode,
     system_message,
     Node
 )
@@ -303,6 +304,17 @@ class DateRole(XRefRole):
         html_time = get_time_node(self.title, self.target)
         return [html_time], []
 
+class ScrollableDirective(Directive):
+    has_content = True
+
+    def run(self) -> list[RawNode | ContainerNode]:
+        self.assert_has_content()
+        open_div = RawNode("", "<div class='scrollable' />", format="html")
+        close_div = RawNode("", "</div>", format="html")
+        container = ContainerNode()
+        self.state.nested_parse(self.content, self.content_offset, container) # pyright: ignore[reportUnknownMemberType]
+        return [open_div, container, close_div]
+
 rst_prolog = """
 .. role:: underline
     :class: underline
@@ -331,6 +343,7 @@ rst_prolog = """
 def setup(app: Sphinx) -> None:
     _ = app.add_node(PageDate)
     _ = app.add_directive("pagedate", PageDateDirective)
+    _ = app.add_directive("scrollable", ScrollableDirective)
     _ = app.add_role("tag", TagXRefRole())
     _ = app.add_role("date", DateRole())
     _ = app.connect("build-finished", create_zips_for_examples)

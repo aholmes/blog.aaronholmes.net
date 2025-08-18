@@ -112,6 +112,12 @@ div.document .page-date {
     font-size: 0.8rem;
 }
 
+/* scrollable code */
+.scrollable .highlight {
+    overflow: auto;
+    max-height: 400px;
+}
+
 /* format dates before links in page TOCs */
 .toc-date:before {
     content:'[';
