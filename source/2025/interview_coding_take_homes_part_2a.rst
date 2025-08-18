@@ -1,5 +1,5 @@
 .. meta::
-    :date: 2025-08-03
+    :date: 2025-08-18
 
 Interview Coding Take-Homes: Part 2.a
 =====================================
